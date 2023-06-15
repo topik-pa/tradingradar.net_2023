@@ -1,6 +1,6 @@
 :root {
   /* COLORS */
-  --white:        #ffffff;
+  --white:        #F4F9FF;
   --lighter-gray: #eeeeee;
   --light-gray:   #aaaaaa;
   --gray:         #787878;
@@ -10,8 +10,8 @@
   --black:        #000000;
 
   --blue: #3e78e8;
-  --red:  #c91e2c;
-  --green:#3db818;
+  --red:  #CD212A;
+  --green:#008C45;
 
   --primary: var(--darkest-gray);
   --secondary: var(--lighter-gray);
