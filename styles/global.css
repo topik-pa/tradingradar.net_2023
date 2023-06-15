@@ -32,6 +32,10 @@ em, .em {
   font-weight: 500;
 }
 
+p {
+  margin-top: var(--small-space)
+}
+
 small {
   font-size: var(--font-size-small);
 }

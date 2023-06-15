@@ -3,7 +3,7 @@ const app = express()
 const { I18n } = require('i18n')
 const path = require('path')
 require('dotenv').config()
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 3001
 
 app.set('views', './views')
 app.set('view engine', 'pug')

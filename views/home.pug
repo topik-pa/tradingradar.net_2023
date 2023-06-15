@@ -15,4 +15,20 @@ block append meta
   meta(name="og:image" content="")
 
 block main
- 
+  h1 Trova le Azioni più interessanti della Borsa Italiana
+  p Scopri #[em in tempo reale] quali titoli azionari stanno generando segnali cruciali secondo i principi dell'#[em Analisi Tecnica].
+  section(class="sentiment")
+  section(class="menu")
+  section(class="best-month")
+  section(class="best-year")
+  section(class="worst-month")
+  section(class="worst-year")
+  section(class="uptrends")
+  section(class="downtrends")
+  section(class="up-inversion")
+  section(class="down-inversion")
+  section(class="dividends")
+  section(class="targets")
+
+block prepend footer
+  include ../components/shared/disclaimer/disclaimer.pug
