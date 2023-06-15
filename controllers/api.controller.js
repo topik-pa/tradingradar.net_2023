@@ -2,7 +2,6 @@ const http = require('https')
 const options = {
   hostname: 'tradingradar.p.rapidapi.com',
   port: null,
-  path: '',
   headers: {
     'x-rapidapi-host': 'tradingradar.p.rapidapi.com',
     'x-rapidapi-key': process.env.X_RAPIDAPI_KEY,
@@ -11,8 +10,10 @@ const options = {
 }
 
 // GET
-exports.test = async (req, res) => {
-  options.method = 'GET'
+exports.get = async (req, res) => {
+  options.method = req.method
+  // console.log(req)
+  options.path = '/api' + req.url
 
   const request = http.request(options, function (response) {
     const chunks = []
