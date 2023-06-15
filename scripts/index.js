@@ -26,6 +26,21 @@ if (document.querySelector('body#home')) {
     module.home.init()
   })
 }
+if (document.querySelector('body#titoli')) {
+  import('../views/titoli/titoli.js').then((module) => {
+    module.titoli.init()
+  })
+}
+if (document.querySelector('body#target')) {
+  import('../views/target/target.js').then((module) => {
+    module.target.init()
+  })
+}
+if (document.querySelector('body#dividendi')) {
+  import('../views/dividendi/dividendi.js').then((module) => {
+    module.dividendi.init()
+  })
+}
 if (document.querySelector('body#privacy')) {
   import('../views/privacy/privacy.js').then((module) => {
     module.privacy.init()
