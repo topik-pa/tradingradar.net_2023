@@ -1,0 +1,19 @@
+header section {
+  padding: var(--x-small-space) var(--view-padding);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header section:nth-child(1) {
+  /* background-color: var(--darker-gray); */
+  border-bottom: 1px solid var(--bt);
+}
+header section:nth-child(2) {
+  position: relative;
+  border-bottom: 1px solid var(--gray);
+}
+
+#toggle-dark {
+  cursor: pointer;
+}
