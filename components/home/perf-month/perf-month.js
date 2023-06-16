@@ -20,15 +20,17 @@ function updateUI (status) {
 
 function printData (stocks, target) {
   const $ul = $root.querySelector(target)
+  const $detection = $root.querySelector(target + ' ~ p.detection em')
   for (let i = 0; i < stocks.length; i++) {
-    const a = stocks[i]
+    const stock = stocks[i]
+    if (i === 0) $detection.innerText = new Date(stock.perf1M.now).toLocaleString()
     const $li = document.createElement('li')
     const $a = document.createElement('a')
-    $a.innerText = a.name
-    $a.title = a.name
-    $a.href = `/analisi/${encodeURI(a.name?.toLowerCase().replace(/ /g, '-'))}?isin=${a.isin}`
+    $a.innerText = stock.name
+    $a.title = stock.name
+    $a.href = `/analisi/${encodeURI(stock.name?.toLowerCase().replace(/ /g, '-'))}?isin=${stock.isin}`
     const $span = document.createElement('span')
-    $span.innerText = a.perf1M.value || ''
+    $span.innerText = stock.perf1M.value || ''
     $li.appendChild($a)
     $li.appendChild($span)
     $ul.appendChild($li)

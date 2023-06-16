@@ -2,6 +2,8 @@
 @import "./variables.css";
 @import "./reset.min.css";
 @import "./global.css";
+@import "./tr-list.css";
+@import "./image-icons.css";
 @import "./icons.css";
 @import "./montserrat.css";
 @import "./spacegrotesk.css";

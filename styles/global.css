@@ -47,6 +47,12 @@ small {
   display: block!important;
 }
 
+p.source, p.detection {
+  font-style: italic;
+  font-size: var(--font-size-small);
+  color: var(--darker-gray);
+}
+
 /* flex list wrapper */
 .list-wrapper {
   display: flex;
@@ -61,43 +67,4 @@ small {
   .list-wrapper > div {
     width: 100%;
   }
-}
-
-/* tradingradar list */
-ul.trlist {
-  list-style: decimal;
-  text-shadow: 0 0 var(--light-gray);;
-}
-ul.trlist li {
-  padding: var(--x-small-space);
-  display: flex;
-  justify-content: space-between;
-  font-weight: 500;
-  margin: 0;
-}
-ul.trlist li:nth-child(odd) {
-  background-color: var(--light-gray);
-}
-/* ranked list */
-ul.rank li:nth-child(1) a, ul.rank li:nth-child(2) a, ul.rank li:nth-child(3) a {
-  text-transform: uppercase;
-}
-ul.rank li:nth-child(1) a {
-  font-weight: bold;
-}
-ul.rank li:nth-child(1) a:before, ul.rank li:nth-child(2) a:before, ul.rank li:nth-child(3) a:before {
-  font-family: 'icomoon' !important;
-  content: "\e99e";
-  font-size: var(--font-size-bigger);
-  margin-right: var(--x-small-space);
-  vertical-align: text-bottom;
-}
-ul.rank li:nth-child(1) a:before {
-  color: var(--gold);
-}
-ul.rank li:nth-child(2) a:before {
-  color: var(--silver);
-}
-ul.rank li:nth-child(3) a:before {
-  color: var(--bronze);
 }
