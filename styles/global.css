@@ -47,10 +47,24 @@ small {
   display: block!important;
 }
 
+/* flex list wrapper */
+.list-wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.list-wrapper > div {
+  margin: var(--small-space) 0;
+  width: 48%;
+}
+@media screen and (max-width: 768px) {
+  .list-wrapper > div {
+    width: 100%;
+  }
+}
 
 /* tradingradar list */
 ul.trlist {
-  margin: var(--xx-small-space) 0 var(--large-space);
   list-style: decimal;
   text-shadow: 0 0 var(--light-gray);;
 }
