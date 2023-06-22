@@ -1,0 +1,26 @@
+/*#uptrends ul.up span {
+  color: var(--green);
+}
+#uptrends ul.down span {
+  color: var(--red);
+}*/
+/*#uptrends table span {
+  text-shadow: 0 0 var(--gray);
+}*/
+
+#uptrends h2::before {
+  font-family: 'icomoon' !important;
+  content: "\e9b5";
+  font-size: var(--font-size-biggest);
+  margin-right: var(--x-small-space);
+  vertical-align: text-bottom;
+  display: inline-block;
+  color: var(--green);
+}
+/*#uptrends-up h2::before {
+  color: var(--green);
+}
+#uptrends-down h2::before {
+  color: var(--red);
+  transform: rotate(90deg);
+}*/

@@ -14,6 +14,9 @@
   margin-right: var(--small-space);
 }
 
+#home .menu p {
+  display: flex;
+}
 #home .menu a {
   margin-right: var(--x-large-space);
 }
@@ -30,6 +33,12 @@
 }
 #home .menu a[data-target="perf-year"]::before {
   content: "\e9a5";
+}
+#home .menu a[data-target="uptrends"]::before {
+  content: "\e9b5";
+}
+#home .menu a[data-target="downtrends"]::before {
+  content: "\e9b5";
 }
 
 #home h3 {

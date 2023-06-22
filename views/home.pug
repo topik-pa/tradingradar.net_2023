@@ -61,10 +61,12 @@ block main
     p
       a(data-target="perf-month", href="#perf-month") Performance mensili
       a(data-target="perf-year", href="#perf-year") Performance annuali
+    p
+      a(data-target="uptrends", href="#uptrends") Titoli in trend rialzista
+      a(data-target="downtrends", href="#downtrends") Titoli in trend ribassista
   include ../components/home/perf-month/perf-month.pug
   include ../components/home/perf-year/perf-year.pug
-  section(class="uptrends")
-  section(class="downtrends")
+  include ../components/home/uptrends/uptrends.pug
   section(class="up-inversion")
   section(class="down-inversion")
 
