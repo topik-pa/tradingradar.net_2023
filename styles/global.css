@@ -52,6 +52,16 @@ small {
   display: block!important;
 }
 
+.green {
+  color: var(--green);
+}
+.red {
+  color: var(--red);
+}
+.blue {
+  color: var(--blue);
+}
+
 p.source, p.detection {
   font-style: italic;
   font-size: var(--font-size-small);
@@ -70,11 +80,55 @@ p.source, p.detection {
 }
 .list-wrapper .social {
   text-align: center;
-  border-top: 1px solid var(--ligth-gray);
+  border-top: 1px solid var(--light-gray);
   padding-top: var(--x-large-space);
 }
 @media screen and (max-width: 768px) {
   .list-wrapper > div {
+    width: 100%;
+  }
+}
+
+/* flex table wrapper */
+.table-wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.table-wrapper > div {
+  margin: var(--small-space) 0;
+  width: 48%;
+}
+.table-wrapper .social {
+  text-align: center;
+  border-top: 1px solid var(--light-gray);
+  padding-top: var(--x-large-space);
+}
+
+.table-wrapper table {
+  margin-bottom: var(--x-large-space);
+  max-height: 33rem;
+  overflow: auto;
+  text-shadow: 0 0 var(--light-gray);
+  font-weight: 500;
+}
+
+.table-wrapper table th, td {
+  padding: var(--x-small-space) var(--normal-space);
+  text-align: left;
+  padding-left: 0;
+}
+
+.table-wrapper table th {
+  font-weight: 500;
+}
+
+.table-wrapper table tbody tr:nth-child(odd) {
+  background-color: var(--lightest-gray);
+}
+
+@media screen and (max-width: 768px) {
+  .table-wrapper > div {
     width: 100%;
   }
 }

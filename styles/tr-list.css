@@ -1,6 +1,5 @@
 ul.trlist {
-  list-style: decimal;
-  text-shadow: 0 0 var(--light-gray);;
+  text-shadow: 0 0 var(--light-gray);
 }
 ul.trlist li {
   padding: var(--x-small-space);
