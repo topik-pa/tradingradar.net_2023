@@ -4,6 +4,9 @@
 #perf-month ul.down span {
   color: var(--red);
 }
+#perf-month ul span {
+  text-shadow: 0 0 var(--gray);
+}
 
 h2::before {
   font-family: 'icomoon' !important;

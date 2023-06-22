@@ -1,2 +1,26 @@
-#home {
+#home .sources div {
+  margin-top: var(--small-space);
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+ }
+#home .sources a {
+ margin-right: var(--large-space);
+ margin-bottom: var(--small-space);
+}
+#home .sources a::before {
+  width: var(--x-large-space);
+  height: var(--x-large-space);
+  margin-right: var(--small-space);
+}
+
+
+#home .menu a[data-target="perf-month"]::before {
+  content: "\e9a5";
+  font-family: 'icomoon' !important;
+  font-size: var(--font-size-bigger);
+  margin-right: var(--x-small-space);
+  vertical-align: text-bottom;
+  text-shadow: 1px 1px var(--black);
+  color: var(--light-gray)
 }
