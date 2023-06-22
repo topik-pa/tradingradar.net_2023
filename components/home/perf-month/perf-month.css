@@ -16,10 +16,16 @@ h2::before {
   vertical-align: text-bottom;
   display: inline-block;
 }
-#perf-month-up::before {
+#perf-month-up h2::before {
   color: var(--green);
 }
-#perf-month-down::before {
+#perf-month-down h2::before {
   color: var(--red);
   transform: rotate(90deg);
+}
+
+#perf-month .social {
+  text-align: center;
+  border-top: 1px solid var(--ligth-gray);
+  padding-top: var(--x-large-space);
 }

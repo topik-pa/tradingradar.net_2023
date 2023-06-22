@@ -14,7 +14,6 @@
   margin-right: var(--small-space);
 }
 
-
 #home .menu a[data-target="perf-month"]::before {
   content: "\e9a5";
   font-family: 'icomoon' !important;
