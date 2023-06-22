@@ -22,6 +22,11 @@ https://eslint.org/docs/user-guide/getting-started
 
 
 # TODO
+Sistemare colori
+Sitemap xml
+test build
+landing pages
+
 
 
 

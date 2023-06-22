@@ -10,7 +10,7 @@ ul.trlist li {
   margin: 0;
 }
 ul.trlist li:nth-child(odd) {
-  background-color: var(--lightest-gray);
+  background-color: var(--lighter-gray);
 }
 /* ranked list */
 ul.rank li:nth-child(1) a, ul.rank li:nth-child(2) a, ul.rank li:nth-child(3) a {

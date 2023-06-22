@@ -21,6 +21,4 @@
 @import "/components/shared/goto_top/goto_top.css";
 @import "/components/shared/header/breadcrumbs/breadcrumbs.css";
 
-@import "/views/home.css";
-
 @import "./responsive.css";
