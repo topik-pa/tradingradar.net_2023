@@ -14,12 +14,24 @@
   margin-right: var(--small-space);
 }
 
-#home .menu a[data-target="perf-month"]::before {
-  content: "\e9a5";
+#home .menu a {
+  margin-right: var(--x-large-space);
+}
+#home .menu a[data-target]::before {
   font-family: 'icomoon' !important;
   font-size: var(--font-size-bigger);
   margin-right: var(--x-small-space);
   vertical-align: text-bottom;
   text-shadow: 1px 1px var(--black);
   color: var(--light-gray)
+}
+#home .menu a[data-target="perf-month"]::before {
+  content: "\e9a5";
+}
+#home .menu a[data-target="perf-year"]::before {
+  content: "\e9a5";
+}
+
+#home h3 {
+  margin-top: var(--large-space);
 }

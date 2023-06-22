@@ -60,9 +60,9 @@ block main
     h3 I dati
     p
       a(data-target="perf-month", href="#perf-month") Performance mensili
+      a(data-target="perf-year", href="#perf-year") Performance annuali
   include ../components/home/perf-month/perf-month.pug
-  section(class="best-year")
-  section(class="worst-year")
+  include ../components/home/perf-year/perf-year.pug
   section(class="uptrends")
   section(class="downtrends")
   section(class="up-inversion")

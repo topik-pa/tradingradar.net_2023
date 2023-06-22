@@ -1,12 +1,15 @@
 import perfMonth from '../components/home/perf-month/perf-month.js'
+import perfYear from '../components/home/perf-year/perf-year.js'
+import style from './home.css' assert { type: 'css' };
+import style2 from '../components/home/perf-month/perf-month.css' assert { type: 'css' };
+import style3 from '../components/home/perf-year/perf-year.css' assert { type: 'css' };
 
 export const home = {
   init: async () => {
     console.log('Home page')
-    const css = await import('./home.css', {assert: { type: 'css' }})
-    document.adoptedStyleSheets = [css.default]
-    const css2 = await import('../components/home/perf-month/perf-month.css', {assert: { type: 'css' }})
-    document.adoptedStyleSheets = [css2.default]
+    document.adoptedStyleSheets = [style, style2, style3];
+    // shadowRoot.adoptedStyleSheets = [style, style2, style3];
     perfMonth.init()
+    perfYear.init()
   }
 }

@@ -22,6 +22,11 @@ main {
 main section {
   margin: var(--section-margin) 0;
 }
+main section:nth-child(even):not(.loading) {
+  background-color: var(--lightest-gray);
+  margin: -1.5rem;
+  padding: 1.5rem;
+}
 
 a {
   color: var(--blue);
@@ -62,6 +67,11 @@ p.source, p.detection {
 .list-wrapper > div {
   margin: var(--small-space) 0;
   width: 48%;
+}
+.list-wrapper .social {
+  text-align: center;
+  border-top: 1px solid var(--ligth-gray);
+  padding-top: var(--x-large-space);
 }
 @media screen and (max-width: 768px) {
   .list-wrapper > div {

@@ -1,14 +1,14 @@
-#perf-month ul.up span {
+#perf-year ul.up span {
   color: var(--green);
 }
-#perf-month ul.down span {
+#perf-year ul.down span {
   color: var(--red);
 }
-#perf-month ul span {
+#perf-year ul span {
   text-shadow: 0 0 var(--gray);
 }
 
-#perf-month h2::before {
+#perf-year h2::before {
   font-family: 'icomoon' !important;
   content: "\e9a5";
   font-size: var(--font-size-biggest);
@@ -16,10 +16,10 @@
   vertical-align: text-bottom;
   display: inline-block;
 }
-#perf-month-up h2::before {
+#perf-year-up h2::before {
   color: var(--green);
 }
-#perf-month-down h2::before {
+#perf-year-down h2::before {
   color: var(--red);
   transform: rotate(90deg);
 }

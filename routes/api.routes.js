@@ -4,6 +4,7 @@ module.exports = app => {
 
   // GET
   router.get('/stocks/perf1M', api.get)
+  router.get('/stocks/perf1Y', api.get)
 
   app.use('/api', router)
 }
