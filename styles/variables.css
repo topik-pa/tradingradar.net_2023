@@ -1,23 +1,24 @@
 :root {
   /* COLORS */
-  --white:        #F4F9FF;
-  --lighter-gray: #eeeeee;
-  --light-gray:   #aaaaaa;
-  --gray:         #787878;
-  --dark-gray:    #666666;
-  --darker-gray:  #4d4d4d;
-  --darkest-gray: #1a1a1a;
-  --black:        #000000;
+  --white:         #FAFAFA;
+  --lightest-gray: #E9E9E9;
+  --lighter-gray:  #D0D0D0;
+  --light-gray:    #A9A9A9;
+  --gray:          #888888;
+  --dark-gray:     #707070;
+  --darker-gray:   #585858;
+  --darkest-gray:  #383838;
+  --black:         #181818;
 
   --blue: #3e78e8;
   --red:  #CD212A;
   --green:#008C45;
-  --gold: #ffd700;
+  --gold:   #ffd700;
   --silver: #aaa9ad;
   --bronze: #cd7f32;
 
   --primary: var(--darkest-gray);
-  --secondary: var(--lighter-gray);
+  --secondary: var(--white);
   --tertiary: var(--blue);
 
   --error: var(--red);

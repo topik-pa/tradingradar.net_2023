@@ -8,7 +8,7 @@ cookieLayer.init()
 gotoTop.init()
 header.init()
 
-// Go to the hash element if present
+// Go to the url hash element if present
 function goToHash () {
   if (location.hash) {
     const $target = document.getElementById(location.hash.replace('#', ''))
@@ -20,6 +20,20 @@ function goToHash () {
   }
 }
 goToHash()
+
+// Go to the relative hash section
+function goToSection () {
+  const $anchors = document.querySelectorAll('a[data-target]')
+
+  for (const anchor of $anchors) {
+    anchor.addEventListener('click', (e) => {
+      e.preventDefault()
+      const $target = document.getElementById(anchor.dataset.target)
+      if ($target) $target.scrollIntoView({ behavior: 'smooth' })
+    })
+  }
+}
+goToSection()
 
 if (document.querySelector('body#home')) {
   import('../views/home.js').then((module) => {

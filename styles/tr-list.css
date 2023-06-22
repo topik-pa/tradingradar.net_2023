@@ -10,7 +10,7 @@ ul.trlist li {
   margin: 0;
 }
 ul.trlist li:nth-child(odd) {
-  background-color: var(--light-gray);
+  background-color: var(--lightest-gray);
 }
 /* ranked list */
 ul.rank li:nth-child(1) a, ul.rank li:nth-child(2) a, ul.rank li:nth-child(3) a {
@@ -25,6 +25,7 @@ ul.rank li:nth-child(1) a:before, ul.rank li:nth-child(2) a:before, ul.rank li:n
   font-size: var(--font-size-bigger);
   margin-right: var(--x-small-space);
   vertical-align: text-bottom;
+  text-shadow: 1px 1px var(--black);
 }
 ul.rank li:nth-child(1) a:before {
   color: var(--gold);
