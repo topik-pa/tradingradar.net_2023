@@ -51,7 +51,8 @@ em, .em {
 }
 
 p {
-  margin: var(--small-space) 0
+  margin: var(--small-space) 0;
+  line-height: 120%;
 }
 
 small {
