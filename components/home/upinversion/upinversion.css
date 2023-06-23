@@ -1,10 +1,10 @@
-#downtrends h2::before {
+#upinversion h2::before {
   font-family: 'icomoon' !important;
-  content: "\e9b5";
+  content: "\e9a9";
   font-size: var(--font-size-biggest);
   margin-right: var(--x-small-space);
   vertical-align: text-bottom;
   display: inline-block;
-  color: var(--red);
+  color: var(--green);
   text-shadow: var(--text-shadow);
 }

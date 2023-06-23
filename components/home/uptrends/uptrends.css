@@ -6,4 +6,5 @@
   vertical-align: text-bottom;
   display: inline-block;
   color: var(--green);
+  text-shadow: var(--text-shadow);
 }

@@ -97,7 +97,7 @@ p.source, p.detection {
 }
 .list-wrapper .social {
   text-align: center;
-  border-top: 1px solid var(--light-gray);
+  border-top: 1px solid var(--lighter-gray);
   padding-top: var(--x-large-space);
 }
 @media screen and (max-width: 768px) {
