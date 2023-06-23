@@ -81,6 +81,10 @@ p.source, p.detection {
   color: var(--darker-gray);
 }
 
+.t-share {
+  margin-top: var(--normal-space);
+}
+
 /* flex list wrapper */
 .list-wrapper {
   display: flex;
