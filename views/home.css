@@ -16,9 +16,16 @@
 
 #home .menu p {
   display: flex;
+  align-items: center;
+}
+#home .menu em {
+  margin-right: var(--small-space);
 }
 #home .menu a {
   margin-right: var(--x-large-space);
+  text-shadow: var(--text-shadow);
+  display: flex;
+  align-items: center;
 }
 #home .menu a[data-target]::before {
   font-family: 'icomoon' !important;
@@ -26,7 +33,11 @@
   margin-right: var(--x-small-space);
   vertical-align: text-bottom;
   text-shadow: 1px 1px var(--black);
-  color: var(--light-gray)
+  color: var(--light-gray);
+
+  border: 1px solid var(--light-gray);
+  padding: var(--x-small-space);
+  border-radius: var(--border-radius-round);
 }
 #home .menu a[data-target="perf-month"]::before {
   content: "\e9a5";

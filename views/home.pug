@@ -58,10 +58,11 @@ block main
         a(class="source img_icon " + source.id, href=source.href, title=source.name) #{source.name}
   div(class="menu")
     h3 I dati
-    p
+    p I titoli azionari selezionati in base all'Analisi Tecnica
+    p #[em Performance:]
       a(data-target="perf-month", href="#perf-month") Performance mensili
       a(data-target="perf-year", href="#perf-year") Performance annuali
-    p
+    p #[em Trend:]
       a(data-target="uptrends", href="#uptrends") Titoli in trend rialzista
       a(data-target="downtrends", href="#downtrends") Titoli in trend ribassista
   include ../components/home/perf-month/perf-month.pug
