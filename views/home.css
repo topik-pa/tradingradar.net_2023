@@ -31,6 +31,7 @@
   font-family: 'icomoon' !important;
   font-size: var(--font-size-bigger);
   margin-right: var(--x-small-space);
+  margin-bottom: var(--small-space);
   vertical-align: text-bottom;
   text-shadow: 1px 1px var(--black);
   color: var(--light-gray);

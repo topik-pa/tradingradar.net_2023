@@ -8,7 +8,7 @@
   text-shadow: 0 0 var(--gray);
 }
 
-#perf-year h2::before {
+#perf-year h3::before {
   font-family: 'icomoon' !important;
   content: "\e9a5";
   font-size: var(--font-size-biggest);
@@ -16,10 +16,10 @@
   vertical-align: text-bottom;
   display: inline-block;
 }
-#perf-year-up h2::before {
+#perf-year-up h3::before {
   color: var(--green);
 }
-#perf-year-down h2::before {
+#perf-year-down h3::before {
   color: var(--red);
   transform: rotate(90deg);
 }
