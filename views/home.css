@@ -51,6 +51,13 @@
 #home .menu a[data-target="downtrends"]::before {
   content: "\e9b5";
 }
+#home .menu a[data-target="upinversion"]::before {
+  content: "\e9a9";
+}
+#home .menu a[data-target="downinversion"]::before {
+  content: "\e9a9";
+
+}
 
 #home h3 {
   margin-top: var(--large-space);
