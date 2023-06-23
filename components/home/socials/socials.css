@@ -1,0 +1,13 @@
+#socials > div > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+#socials > div > div > div {
+  width: 100%;
+}
+
+#socials h3 {
+  margin-bottom: var(--normal-space);
+}
