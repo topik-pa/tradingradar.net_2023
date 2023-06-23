@@ -5,7 +5,7 @@ async function callTheApi () {
   try {
     const response = await proxyFetch(url)
     updateUI(statuses[2])
-    printData(response.body.uptrends, 'table')
+    printData(response.body.downtrends, 'table')
   } catch (error) {
     console.error(error)
     updateUI(statuses[3])
@@ -34,7 +34,7 @@ function printData (stocks, target) {
     $tr.appendChild($td1)
 
     const $td2 = document.createElement('td')
-    $td2.classList.add('green', 'em')
+    $td2.classList.add('red', 'em')
     $td2.innerText = stock.lastPrice?.value
     $tr.appendChild($td2)
 
@@ -54,14 +54,14 @@ function printData (stocks, target) {
   }
 }
 
-const upTrends = {
+const downTrends = {
   init: () => {
-    console.log('uptrends')
-    $root = document.getElementById('uptrends')
+    console.log('downtrends')
+    $root = document.getElementById('downtrends')
     statuses = ['idle', 'loading', 'success', 'error']
     updateUI(statuses[1])
     callTheApi()
   }
 }
 
-export default upTrends
+export default downTrends
