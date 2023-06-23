@@ -15,6 +15,13 @@ body {
   flex-direction: column;
 }
 
+table tbody tr:nth-child(odd) {
+  background-color: var(--lightest-gray);
+}
+ul.trlist li:nth-child(odd) {
+  background-color: var(--lightest-gray);
+}
+
 main {
   padding: var(--view-padding);
   flex: auto;
@@ -26,6 +33,12 @@ main section:nth-child(even):not(.loading) {
   background-color: var(--lightest-gray);
   margin: -1.5rem;
   padding: 1.5rem;
+}
+main section:nth-child(even) table tbody tr:nth-child(odd) {
+  background-color: var(--white);
+}
+main section:nth-child(even) ul li:nth-child(odd) {
+  background-color: var(--white);
 }
 
 a {
@@ -108,6 +121,7 @@ p.source, p.detection {
 .table-wrapper table {
   margin-bottom: var(--x-large-space);
   max-height: 33rem;
+  display: inline-block;
   overflow: auto;
   text-shadow: 0 0 var(--light-gray);
   font-weight: 500;
@@ -121,10 +135,6 @@ p.source, p.detection {
 
 .table-wrapper table th {
   font-weight: 500;
-}
-
-.table-wrapper table tbody tr:nth-child(odd) {
-  background-color: var(--lightest-gray);
 }
 
 @media screen and (max-width: 768px) {

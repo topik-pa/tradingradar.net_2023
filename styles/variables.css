@@ -59,7 +59,7 @@
   --xx-large-space: 3rem;
 
   --view-padding: var(--large-space);
-  --section-margin: var(--x-large-space);
+  --section-margin: calc( var(--x-large-space) * 2 );
   --gap: var(--x-small-space);
   --button-padding: var(--small-space);
   --content: 80%;
