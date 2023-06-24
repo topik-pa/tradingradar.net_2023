@@ -21,4 +21,11 @@
 @import "/components/shared/goto_top/goto_top.css";
 @import "/components/shared/header/breadcrumbs/breadcrumbs.css";
 
+@import "/views/home.css";
+@import "/views/titoli/titoli.css";
+@import "/views/target/target.css";
+@import "/views/dividendi/dividendi.css";
+@import "/views/privacy/privacy.css";
+@import "/views/404/404.css";
+
 @import "./responsive.css";

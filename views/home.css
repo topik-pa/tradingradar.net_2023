@@ -1,3 +1,12 @@
+@import "/components/home/perf-month/perf-month.css";
+@import "/components/home/perf-year/perf-year.css";
+@import "/components/home/uptrends/uptrends.css";
+@import "/components/home/downtrends/downtrends.css";
+@import "/components/home/upinversion/upinversion.css";
+@import "/components/home/downinversion/downinversion.css";
+@import "/components/home/socials/socials.css";
+
+
 #home .sources div {
   margin-top: var(--small-space);
   display: flex;
