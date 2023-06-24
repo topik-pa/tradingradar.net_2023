@@ -10,16 +10,17 @@
       url: '/titoli'
     },
     {
-      name: 'Target price e Raccomandazioni',
-      url: '/target-price-giudizi'
+      name: 'Target Price e Raccomandazioni',
+      url: '/target-price-raccomandazioni'
     },
     {
       name: 'Dividendi',
       url: '/dividendi'
     }
   ] 
-i(class="icon-menu") 
+span(class="hamburger icon-menu") 
 nav(id="main-menu")
+  span(class="close icon-close")
   ul
     each link in links
       li(class = (title === link.name) ? "active" : "")

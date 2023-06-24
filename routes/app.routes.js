@@ -10,13 +10,13 @@ module.exports = app => {
     ]
     res.render('titoli/titoli', { id: 'titoli', title: 'Titoli', url: req.url, breadcrumbs })
   })
-  app.get('/target-price-giudizi', (req, res) => {
+  app.get('/target-price-raccomandazioni', (req, res) => {
     const breadcrumbs = [
       {
-        name: 'Target Price e Giudizi'
+        name: 'Target Price e Raccomandazioni'
       }
     ]
-    res.render('target/target', { id: 'target', title: 'Target', url: req.url, breadcrumbs })
+    res.render('target/target', { id: 'target', title: 'Target Price e Raccomandazioni', url: req.url, breadcrumbs })
   })
   app.get('/dividendi', (req, res) => {
     const breadcrumbs = [
