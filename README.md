@@ -26,12 +26,11 @@ Sistemare colori anche nel caso dark
 Sitemap xml
 landing pages
 hamburger menu
-unificare chiamata custom
 pagina e sezione sostenitori
 una sezione social ogni sezione
 un paragrafo specifico per ogni sezione social
 una sezione per un analisi specifica
-una pagina per le analisi 
+una pagina per le analisi storiche
 
 
 

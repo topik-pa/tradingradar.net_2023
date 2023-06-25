@@ -1,21 +1,4 @@
-import proxyFetch from '../../../scripts/proxyFetch.js'
-let $root; let statuses; const url = 'api/custom'
-
-async function callTheApi () {
-  try {
-    const response = await proxyFetch(url)
-    updateUI(statuses[2])
-    printData(response.body.tiup, 'table')
-  } catch (error) {
-    console.error(error)
-    updateUI(statuses[3])
-  }
-}
-
-function updateUI (status) {
-  $root.classList.remove(...statuses)
-  $root.classList.add(status)
-}
+let $root
 
 function printData (stocks, target) {
   const $table = $root.querySelector(target)
@@ -51,12 +34,10 @@ function printData (stocks, target) {
 }
 
 const upInversion = {
-  init: () => {
+  init: (stocks) => {
     console.log('upinversion')
     $root = document.getElementById('upinversion')
-    statuses = ['idle', 'loading', 'success', 'error']
-    updateUI(statuses[1])
-    callTheApi()
+    printData(stocks, 'table')
   }
 }
 
