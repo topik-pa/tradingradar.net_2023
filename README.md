@@ -25,16 +25,11 @@ https://eslint.org/docs/user-guide/getting-started
 Sistemare colori anche nel caso dark
 Sitemap xml
 landing pages
-hamburger menu
 pagina e sezione sostenitori
 una sezione social ogni sezione
 un paragrafo specifico per ogni sezione social
 una sezione per un analisi specifica
 una pagina per le analisi storiche
-
-
-
-
-
-
-
+pagine analisi titolo
+cookie privacy
+meta tah head

@@ -21,7 +21,7 @@ module.exports = {
     ],
     'linebreak-style': ['error', process.platform === 'win32' ? 'windows' : 'unix'],
     'max-len': [
-      'error', { code: 120 }
+      'error', { code: 160 }
     ],
     'no-unused-vars': ['error', { vars: 'all', args: 'after-used', ignoreRestSiblings: false }],
     'no-multiple-empty-lines': ['error', { max: 1 }],

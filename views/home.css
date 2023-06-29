@@ -6,23 +6,6 @@
 @import "/components/home/downinversion/downinversion.css";
 @import "/components/home/socials/socials.css";
 
-
-#home .sources div {
-  margin-top: var(--small-space);
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
- }
-#home .sources a {
- margin-right: var(--large-space);
- margin-bottom: var(--small-space);
-}
-#home .sources a::before {
-  width: var(--x-large-space);
-  height: var(--x-large-space);
-  margin-right: var(--small-space);
-}
-
 #home .menu p {
   display: flex;
   align-items: center;

@@ -142,6 +142,52 @@ p.source, p.detection {
   font-weight: 500;
 }
 
+/* Menu selezioni titoli */
+.menu p {
+  display: flex;
+  align-items: center;
+}
+ .menu em {
+  margin-right: var(--small-space);
+}
+ .menu a {
+  margin-right: var(--x-large-space);
+  text-shadow: var(--text-shadow);
+  display: flex;
+  align-items: center;
+}
+ .menu a[data-target]::before {
+  font-family: 'icomoon' !important;
+  font-size: var(--font-size-bigger);
+  margin-right: var(--x-small-space);
+  margin-bottom: var(--small-space);
+  vertical-align: text-bottom;
+  text-shadow: 1px 1px var(--black);
+  color: var(--light-gray);
+
+  border: 1px solid var(--light-gray);
+  padding: var(--x-small-space);
+  border-radius: var(--border-radius-round);
+}
+ .menu a[data-target="perf-month"]::before {
+  content: "\e9a5";
+}
+ .menu a[data-target="perf-year"]::before {
+  content: "\e9a5";
+}
+ .menu a[data-target="uptrends"]::before {
+  content: "\e9b5";
+}
+ .menu a[data-target="downtrends"]::before {
+  content: "\e9b5";
+}
+ .menu a[data-target="upinversion"]::before {
+  content: "\e9a9";
+}
+ .menu a[data-target="downinversion"]::before {
+  content: "\e9a9";
+}
+
 @media screen and (max-width: 768px) {
   .table-wrapper > div {
     width: 100%;

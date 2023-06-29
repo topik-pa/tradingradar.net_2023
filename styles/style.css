@@ -15,6 +15,8 @@
 @import "/components/shared/header/main-logo/main-logo.css";
 @import "/components/shared/header/main-menu/main-menu.css";
 @import "/components/shared/header/social-icons/social-icons.css";
+@import "/components/shared/sources/sources.css";
+@import "/components/shared/header/breadcrumbs/breadcrumbs.css";
 @import "/components/shared/footer/footer.css";
 @import "/components/shared/disclaimer/disclaimer.css";
 @import "/components/shared/cookie_layer/cookie_layer.css";
