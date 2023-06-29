@@ -57,13 +57,18 @@ if (document.querySelector('body#dividendi')) {
   })
 }
 if (document.querySelector('body#perf-month-view')) {
-  import('../views/performance/mensili.js').then((module) => {
+  import('../views/landing/mensili.js').then((module) => {
     module.perfMonthView.init()
   })
 }
 if (document.querySelector('body#perf-year-view')) {
-  import('../views/performance/annuali.js').then((module) => {
+  import('../views/landing/annuali.js').then((module) => {
     module.perfYearView.init()
+  })
+}
+if (document.querySelector('body#uptrend-view')) {
+  import('../views/landing/rialziste.js').then((module) => {
+    module.upTrendsView.init()
   })
 }
 if (document.querySelector('body#privacy')) {

@@ -32,7 +32,7 @@ module.exports = app => {
         name: 'Performance mensili'
       }
     ]
-    res.render('performance/mensili', { id: 'perf-month-view', title: 'Performance mensili', url: req.url, breadcrumbs })
+    res.render('landing/mensili', { id: 'perf-month-view', title: 'Performance mensili', url: req.url, breadcrumbs })
   })
   app.get('/performance-annuali', (req, res) => {
     const breadcrumbs = [
@@ -40,7 +40,15 @@ module.exports = app => {
         name: 'Performance annuali'
       }
     ]
-    res.render('performance/annuali', { id: 'perf-year-view', title: 'Performance annuali', url: req.url, breadcrumbs })
+    res.render('landing/annuali', { id: 'perf-year-view', title: 'Performance annuali', url: req.url, breadcrumbs })
+  })
+  app.get('/azioni-italiane-rialziste', (req, res) => {
+    const breadcrumbs = [
+      {
+        name: 'Titoli azionari in trend rialzista'
+      }
+    ]
+    res.render('landing/rialziste', { id: 'uptrend-view', title: 'Titoli azionari in trend rialzista', url: req.url, breadcrumbs })
   })
   app.get('/privacy', (req, res) => {
     const breadcrumbs = [

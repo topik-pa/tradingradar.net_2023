@@ -28,7 +28,8 @@
 @import "/views/dividendi/dividendi.css";
 @import "/views/privacy/privacy.css";
 @import "/views/404/404.css";
-@import "/views/performance/mensili.css";
-@import "/views/performance/annuali.css";
+@import "/views/landing/mensili.css";
+@import "/views/landing/annuali.css";
+@import "/views/landing/rialziste.css";
 
 @import "./responsive.css";
