@@ -33,5 +33,6 @@
 @import "/views/landing/rialziste.css";
 @import "/views/landing/ribassiste.css";
 @import "/views/landing/inver-rialzista.css";
+@import "/views/landing/inver-ribassista.css";
 
 @import "./responsive.css";
