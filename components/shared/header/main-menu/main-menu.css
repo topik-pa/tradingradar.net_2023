@@ -1,6 +1,6 @@
 #main-menu li {
-  display: inline;
-  padding-left: var(--large-space);
+  display: inline-block;
+  padding-left: var(--normal-space);
   font-weight: 500;
   color: var(--link);
 }

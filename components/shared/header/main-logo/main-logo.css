@@ -6,7 +6,6 @@
 
 #main-logo img {
   height: 4rem;
-  margin-right: var(--normal-space);
   vertical-align: text-bottom;
   border-radius: 50%;
 }
