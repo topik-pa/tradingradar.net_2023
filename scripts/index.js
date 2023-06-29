@@ -61,6 +61,11 @@ if (document.querySelector('body#perf-month-view')) {
     module.perfMonthView.init()
   })
 }
+if (document.querySelector('body#perf-year-view')) {
+  import('../views/performance/annuali.js').then((module) => {
+    module.perfYearView.init()
+  })
+}
 if (document.querySelector('body#privacy')) {
   import('../views/privacy/privacy.js').then((module) => {
     module.privacy.init()

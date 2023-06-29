@@ -29,5 +29,6 @@
 @import "/views/privacy/privacy.css";
 @import "/views/404/404.css";
 @import "/views/performance/mensili.css";
+@import "/views/performance/annuali.css";
 
 @import "./responsive.css";

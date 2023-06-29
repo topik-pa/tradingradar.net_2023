@@ -34,6 +34,14 @@ module.exports = app => {
     ]
     res.render('performance/mensili', { id: 'perf-month-view', title: 'Performance mensili', url: req.url, breadcrumbs })
   })
+  app.get('/performance-annuali', (req, res) => {
+    const breadcrumbs = [
+      {
+        name: 'Performance annuali'
+      }
+    ]
+    res.render('performance/annuali', { id: 'perf-year-view', title: 'Performance annuali', url: req.url, breadcrumbs })
+  })
   app.get('/privacy', (req, res) => {
     const breadcrumbs = [
       {

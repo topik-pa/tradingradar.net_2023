@@ -1,0 +1,35 @@
+extends ../layout.pug
+
+block append meta
+  title #{title} | #{proj_name}
+  meta(name="description" content="")
+  meta(name="keywords" content="")
+  meta(name="robots" content="")
+  link(rel="canonical", href=proj_url + url)
+
+  meta(name="og:url" content="")
+  meta(name="og:type" content="")
+  meta(name="og:title" content="")
+  meta(name="og:site_name" content="")
+  meta(name="og:description" content="")
+  meta(name="og:image" content="")
+
+block main
+  h1 Trova ora le Azioni con le migliori (e peggiori) performance annuali
+  p Scopri #[em in tempo reale] quali titoli azionari stanno generando segnali cruciali secondo i principi dell'#[em Analisi Tecnica].
+  include ../../components/shared/sources/sources.pug
+  include ../../components/home/perf-year/perf-year.pug
+  div(class="menu")
+    h3 Altre Classifiche e Selezioni
+    p Titoli azionari selezionati in base ai #[em criteri di Analisi Tecnica]
+    p #[em Performance:]
+      a(data-target="perf-month", href="/performance-mensili") Performance mensili
+    p #[em Trend:]
+      a(data-target="uptrends", href="/azioni-italiane-rialziste") Titoli in trend rialzista
+      a(data-target="downtrends", href="/azioni-italiane-ribassiste") Titoli in trend ribassista
+    p #[em Inversione:]
+      a(data-target="upinversion", href="azioni-inversione-rialzista") Titoli in inversione rialzista
+      a(data-target="downinversion", href="azioni-inversione-ribassista") Titoli in inversione ribassista
+
+block prepend footer
+  include ../../components/shared/disclaimer/disclaimer.pug
