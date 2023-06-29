@@ -50,6 +50,14 @@ module.exports = app => {
     ]
     res.render('landing/rialziste', { id: 'uptrend-view', title: 'Titoli azionari in trend rialzista', url: req.url, breadcrumbs })
   })
+  app.get('/azioni-italiane-ribassiste', (req, res) => {
+    const breadcrumbs = [
+      {
+        name: 'Titoli azionari in trend ribassista'
+      }
+    ]
+    res.render('landing/ribassiste', { id: 'downtrend-view', title: 'Titoli azionari in trend ribassista', url: req.url, breadcrumbs })
+  })
   app.get('/privacy', (req, res) => {
     const breadcrumbs = [
       {

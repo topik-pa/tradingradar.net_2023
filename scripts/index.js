@@ -71,6 +71,11 @@ if (document.querySelector('body#uptrend-view')) {
     module.upTrendsView.init()
   })
 }
+if (document.querySelector('body#downtrend-view')) {
+  import('../views/landing/ribassiste.js').then((module) => {
+    module.downTrendsView.init()
+  })
+}
 if (document.querySelector('body#privacy')) {
   import('../views/privacy/privacy.js').then((module) => {
     module.privacy.init()

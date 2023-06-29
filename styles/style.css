@@ -31,5 +31,6 @@
 @import "/views/landing/mensili.css";
 @import "/views/landing/annuali.css";
 @import "/views/landing/rialziste.css";
+@import "/views/landing/ribassiste.css";
 
 @import "./responsive.css";
