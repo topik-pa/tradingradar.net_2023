@@ -81,6 +81,11 @@ if (document.querySelector('body#upinversion-view')) {
     module.upInversionView.init()
   })
 }
+if (document.querySelector('body#downinversion-view')) {
+  import('../views/landing/inver-ribassista.js').then((module) => {
+    module.downInversionView.init()
+  })
+}
 if (document.querySelector('body#privacy')) {
   import('../views/privacy/privacy.js').then((module) => {
     module.privacy.init()
