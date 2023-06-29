@@ -21,7 +21,6 @@
 @import "/components/shared/disclaimer/disclaimer.css";
 @import "/components/shared/cookie_layer/cookie_layer.css";
 @import "/components/shared/goto_top/goto_top.css";
-@import "/components/shared/header/breadcrumbs/breadcrumbs.css";
 
 @import "/views/home.css";
 @import "/views/titoli/titoli.css";
@@ -29,5 +28,6 @@
 @import "/views/dividendi/dividendi.css";
 @import "/views/privacy/privacy.css";
 @import "/views/404/404.css";
+@import "/views/performance/mensili.css";
 
 @import "./responsive.css";

@@ -26,6 +26,14 @@ module.exports = app => {
     ]
     res.render('dividendi/dividendi', { id: 'dividendi', title: 'Dividendi', url: req.url, breadcrumbs })
   })
+  app.get('/performance-mensili', (req, res) => {
+    const breadcrumbs = [
+      {
+        name: 'Performance mensili'
+      }
+    ]
+    res.render('performance/mensili', { id: 'perf-month-view', title: 'Performance mensili', url: req.url, breadcrumbs })
+  })
   app.get('/privacy', (req, res) => {
     const breadcrumbs = [
       {
