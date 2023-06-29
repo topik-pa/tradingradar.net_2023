@@ -58,6 +58,14 @@ module.exports = app => {
     ]
     res.render('landing/ribassiste', { id: 'downtrend-view', title: 'Titoli azionari in trend ribassista', url: req.url, breadcrumbs })
   })
+  app.get('/azioni-inversione-rialzista', (req, res) => {
+    const breadcrumbs = [
+      {
+        name: 'Titoli azionari in inversione rialzista'
+      }
+    ]
+    res.render('landing/inver-rialzista', { id: 'upinversion-view', title: 'Titoli azionari in inversione rialzista', url: req.url, breadcrumbs })
+  })
   app.get('/privacy', (req, res) => {
     const breadcrumbs = [
       {

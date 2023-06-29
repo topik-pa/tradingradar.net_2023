@@ -76,6 +76,11 @@ if (document.querySelector('body#downtrend-view')) {
     module.downTrendsView.init()
   })
 }
+if (document.querySelector('body#upinversion-view')) {
+  import('../views/landing/inver-rialzista.js').then((module) => {
+    module.upInversionView.init()
+  })
+}
 if (document.querySelector('body#privacy')) {
   import('../views/privacy/privacy.js').then((module) => {
     module.privacy.init()

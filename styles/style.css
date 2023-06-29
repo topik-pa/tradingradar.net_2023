@@ -32,5 +32,6 @@
 @import "/views/landing/annuali.css";
 @import "/views/landing/rialziste.css";
 @import "/views/landing/ribassiste.css";
+@import "/views/landing/inver-rialzista.css";
 
 @import "./responsive.css";
