@@ -155,6 +155,7 @@ p.source, p.detection {
   text-shadow: var(--text-shadow);
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
  .menu a[data-target]::before {
   font-family: 'icomoon' !important;

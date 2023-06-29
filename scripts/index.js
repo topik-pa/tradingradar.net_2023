@@ -27,6 +27,7 @@ function goToSection () {
 
   for (const anchor of $anchors) {
     anchor.addEventListener('click', (e) => {
+      if (e.target.href) return
       e.preventDefault()
       const $target = document.getElementById(anchor.dataset.target)
       if ($target) $target.scrollIntoView({ behavior: 'smooth' })
