@@ -6,6 +6,8 @@ module.exports = app => {
   router.get('/stocks/perf1M', api.get)
   router.get('/stocks/perf1Y', api.get)
   router.get('/stocks/lastJudgment', api.get)
+  router.get('/stocks/lastDivDate', api.get)
+  router.get('/stocks/divYield', api.get)
   router.get('/custom', api.get)
 
   router.get('/info/:isin', api.get)

@@ -13,3 +13,26 @@ block append meta
   meta(name="og:site_name" content="")
   meta(name="og:description" content="")
   meta(name="og:image" content="")
+
+block main
+  section(id="dividens")
+    h2 Data e valore dei Dividendi
+    div(class="list-wrapper")
+      div(id="dividend-yield") 
+        h3 I valori dei dividendi #[em in rapporto al prezzo]
+        p Lista dei dividendi ordinata per valore in rapporto al prezzo di listino del Titolo
+        ul(class="trlist rank yield")
+        p(class="source") Fonte: #[em(class="img_icon milano-finanza") Milano Finanza]
+        p(class="detection") Rilevamento: #[em ]
+      div(id="dividend-date")
+        h3 Prossime date di Stacco della Cedola
+        p La lista ordinata delle date di stacco del Dividendo 
+        ul(class="trlist date")
+        p(class="source") Fonte: #[em(class="img_icon milano-finanza") Milano Finanza]
+        p(class="detection") Rilevamento: #[em ]
+      div(class="social")
+        div(class="fb-like" data-href="https://tradingradar.net/dividendi" data-width="" data-layout="button" data-action="like" data-size="large" data-share="true")
+        div(class="t-share")
+          script(async, src="https://telegram.org/js/telegram-widget.js?22", data-telegram-share-url="https://tradingradar.net/dividendi", data-size="large")
+        div(class="fb-comments", data-href="https://tradingradar.net/dividendi", data-width="100%", data-mobile="true", data-numposts="5")
+  

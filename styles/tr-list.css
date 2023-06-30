@@ -1,5 +1,7 @@
 ul.trlist {
   text-shadow: 0 0 var(--light-gray);
+  max-height: 30rem;
+  overflow-y: auto;
 }
 ul.trlist li {
   padding: var(--x-small-space);
