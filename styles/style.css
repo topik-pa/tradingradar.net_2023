@@ -23,6 +23,7 @@
 @import "/components/shared/cookie_layer/cookie_layer.css";
 @import "/components/shared/goto_top/goto_top.css";
 @import "/components/analisi/stock_alerts/stock_alerts.css";
+@import "/components/titoli/stocks_list/stocks_list.css";
 
 @import "/views/home.css";
 @import "/views/titoli/titoli.css";

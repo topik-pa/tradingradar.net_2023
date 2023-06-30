@@ -69,6 +69,7 @@ module.exports = app => {
     res.render('home', { id: 'home', title: 'Home', url: req.url })
   })
   app.get('/titoli', (req, res) => {
+    res.locals.stocks = stocks
     const breadcrumbs = [
       {
         name: 'Titoli'
