@@ -2,3 +2,6 @@
 #downtrend-view main section {
   margin: var(--section-margin) 0;
 }
+#downtrend-view h3 {
+  margin-top: var(--large-space);
+}

@@ -2,3 +2,6 @@
 #downinversion-view main section {
   margin: var(--section-margin) 0;
 }
+#downinversion-view h3 {
+  margin-top: var(--large-space);
+}

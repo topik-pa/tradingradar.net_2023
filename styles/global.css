@@ -51,7 +51,7 @@ em, .em {
 }
 
 p {
-  margin: var(--small-space) 0;
+  margin: var(--x-small-space) 0;
   line-height: 120%;
 }
 
@@ -169,6 +169,10 @@ p.source, p.detection {
   border: 1px solid var(--light-gray);
   padding: var(--x-small-space);
   border-radius: var(--border-radius-round);
+}
+.menu a[data-target]:hover:before {
+  text-shadow: 1px 1px var(--red);
+  border-color: var(--darker-gray);
 }
  .menu a[data-target="perf-month"]::before {
   content: "\e9a5";

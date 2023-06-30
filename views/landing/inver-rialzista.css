@@ -2,3 +2,6 @@
 #upinversion-view main section {
   margin: var(--section-margin) 0;
 }
+#upinversion-view h3 {
+  margin-top: var(--large-space);
+}
