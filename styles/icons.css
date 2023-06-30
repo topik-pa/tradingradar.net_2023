@@ -40,6 +40,9 @@
 .icon-home:before {
   content: "\e904";
 }
+.icon-quill:before {
+  content: "\e907";
+}
 .icon-envelop:before {
   content: "\e945";
 }
@@ -57,6 +60,9 @@
 }
 .icon-fire:before {
   content: "\e9a9";
+}
+.icon-target:before {
+  content: "\e9b3";
 }
 .icon-power:before {
   content: "\e9b5";
