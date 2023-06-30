@@ -13,3 +13,27 @@ block append meta
   meta(name="og:site_name" content="")
   meta(name="og:description" content="")
   meta(name="og:image" content="")
+
+block main
+  section(id="target-price", class="table-wrapper")
+    div
+      h2 Target Price ed ultime Raccomandazioni dalle Banche di Affari
+      p I target Price e le Raccomandazioni delle principali Banche d'Affari #[em ordinati per data]
+      table
+        thead
+          tr
+            th Nome
+            th Data
+            th Banca
+            th Giudizio
+            th Target price
+        tbody
+      p(class="source") Fonte: #[em(class="img_icon soldi-on-line") Soldi on Line]
+      p(class="detection") Rilevamento: #[em ]
+      div(class="social")
+        div(class="fb-like" data-href="https://tradingradar.net/target-price-raccomandazioni" data-width="" data-layout="button" data-action="like" data-size="large" data-share="true")
+        div(class="t-share")
+          script(async, src="https://telegram.org/js/telegram-widget.js?22", data-telegram-share-url="https://tradingradar.net/target-price-raccomandazioni", data-size="large")
+    div
+      div(class="fb-comments", data-href="https://tradingradar.net/target-price-raccomandazioni", data-width="", data-mobile="true", data-numposts="5")
+  
