@@ -89,7 +89,7 @@ function printInfoData () {
 
 function printAnalysisData () {
   const $analysis = $root.querySelector('.analysis')
-  const $borsaItaliana = $analysis.querySelector('.borsa-italiana-logo')
+  const $borsaItaliana = $analysis.querySelector('.borsa-italiana')
   $borsaItaliana.querySelector('a').href = data.analysis.body.borsaIt_resistance?.source
   $borsaItaliana.querySelector('p a').href = data.analysis.body.borsaIt_resistance?.source
   $borsaItaliana.querySelector('.resistance span').innerText = data.analysis.body.borsaIt_resistance?.value
@@ -98,19 +98,19 @@ function printAnalysisData () {
   $borsaItaliana.querySelector('.evaluation span').innerText = data.analysis.body.borsaIt_evaluation?.value
   $borsaItaliana.querySelector('.rating span').innerText = data.analysis.body.borsaIt_rating?.value
 
-  const $ilSole24Ore = $analysis.querySelector('.il-sole-24-ore-logo')
+  const $ilSole24Ore = $analysis.querySelector('.il-sole-24-ore')
   $ilSole24Ore.querySelector('a').href = data.analysis.body.sol24_shortTendency?.source
   $ilSole24Ore.querySelector('p a').href = data.analysis.body.sol24_shortTendency?.source
   $ilSole24Ore.querySelector('.short-tend span').innerText = data.analysis.body.sol24_shortTendency?.value
   $ilSole24Ore.querySelector('.med-tend span').innerText = data.analysis.body.sol24_mediumTendency?.value
 
-  const $mf = $analysis.querySelector('.milano-finanza-logo')
+  const $mf = $analysis.querySelector('.milano-finanza')
   $mf.querySelector('a').href = data.analysis.body.milFin_mfRanking?.source
   $mf.querySelector('p a').href = data.analysis.body.milFin_mfRanking?.source
   $mf.querySelector('.rating span').innerText = data.analysis.body.milFin_mfRanking?.value
   $mf.querySelector('.risk span').innerText = data.analysis.body.milFin_mfRisk?.value
 
-  const $sol = $analysis.querySelector('.soldi-on-line-logo')
+  const $sol = $analysis.querySelector('.soldi-on-line')
   $sol.querySelector('a').href = data.analysis.body.sol_lastJudgment?.source
   $sol.querySelector('p a').href = data.analysis.body.sol_lastJudgment?.source
   $sol.querySelector('.date span').innerText = data.analysis.body.sol_lastJudgment?.value[0]
@@ -118,7 +118,7 @@ function printAnalysisData () {
   $sol.querySelector('.evaluation span').innerText = data.analysis.body.sol_lastJudgment?.value[2]
   $sol.querySelector('.target span').innerText = data.analysis.body.sol_lastJudgment?.value[3]
 
-  const $teleborsa = $analysis.querySelector('.teleborsa-logo')
+  const $teleborsa = $analysis.querySelector('.teleborsa')
   $teleborsa.querySelector('a').href = data.analysis.body.teleb_tbResistance?.source
   $teleborsa.querySelector('p a').href = data.analysis.body.teleb_tbResistance?.source
   $teleborsa.querySelector('.resistance span').innerText = data.analysis.body.teleb_tbResistance?.value
