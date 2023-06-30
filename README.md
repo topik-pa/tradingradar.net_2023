@@ -24,12 +24,21 @@ https://eslint.org/docs/user-guide/getting-started
 # TODO
 Sistemare colori anche nel caso dark
 Sitemap xml
-landing pages
+
 pagina e sezione sostenitori
+
 una sezione social ogni sezione
 un paragrafo specifico per ogni sezione social
+
 una sezione per un analisi specifica
 una pagina per le analisi storiche
+
 pagine analisi titolo
+pagine altre menu
+
 cookie privacy
-meta tah head
+meta tag head
+
+json schema
+
+tutti i redirects previsti nella vecchia versione

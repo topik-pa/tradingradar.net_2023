@@ -1,0 +1,42 @@
+#stock_alerts  {
+  transition: bottom .8s;
+  padding: var(--view-padding);
+  position: fixed;
+  bottom: -15rem;
+  left: 0;
+  right: 0;
+  border-top: 1px solid var(--light-gray);
+  background-color: var(--lighter-gray);
+  z-index: 99;
+}
+
+#stock_alerts h3 {
+  margin: 0;
+  margin-bottom: var(--normal-space);
+}
+
+#stock_alerts i {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: var(--view-padding);
+  color: var(--gray);
+  cursor: pointer;
+}
+
+#stock_alerts .alert {
+  margin: 0;
+  padding: var(--xx-small-space) 0;
+  border-bottom: 1px solid var(--gray);
+}
+
+#stock_alerts .red {
+  background-color: rgba(205, 33, 42, .2);
+}
+#stock_alerts .green {
+  background-color: rgba(0, 140, 69, .2);
+}
+
+#stock_alerts.show {
+  bottom: 0;
+}

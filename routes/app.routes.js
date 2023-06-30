@@ -1,3 +1,69 @@
+const https = require('https')
+let stocks = []
+
+function getStocksList () {
+  const options = {
+    method: 'GET',
+    hostname: 'tradingradar.p.rapidapi.com',
+    port: null,
+    path: '/api/stocks',
+    headers: {
+      'x-rapidapi-host': 'tradingradar.p.rapidapi.com',
+      'x-rapidapi-key': process.env.X_RAPIDAPI_KEY,
+      useQueryString: true
+    }
+  }
+  const request = https.request(options, function (response) {
+    const chunks = []
+    response.on('data', function (chunk) {
+      chunks.push(chunk)
+    })
+    response.on('end', function () {
+      const body = Buffer.concat(chunks).toString()
+      try {
+        stocks = JSON.parse(body)
+      } catch (error) {
+        console.error(error)
+      }
+    })
+  })
+  request.end()
+  request.on('error', error => {
+    console.error(error)
+  })
+}
+getStocksList()
+
+function capitalize (text) {
+  const words = text.split(' ')
+  for (let i = 0; i < words.length; i++) {
+    words[i] = words[i][0].toUpperCase() + words[i].substr(1)
+  }
+  return words.join(' ')
+}
+
+function hasIsin (req, res, next) {
+  if (req.query.isin) return next()
+  res.render('404/404', { id: 'err404', title: 'Error 404' })
+}
+
+function getStockNameFromIsin (isin) {
+  if (!stocks.length) return
+  for (const stock of stocks) {
+    if (stock.isin === isin) {
+      return stock.name
+    }
+  }
+}
+function getStockCodeFromIsin (isin) {
+  if (!stocks.length) return
+  for (const stock of stocks) {
+    if (stock.isin === isin) {
+      return stock.code
+    }
+  }
+}
+
 module.exports = app => {
   app.get('/', (req, res) => {
     res.render('home', { id: 'home', title: 'Home', url: req.url })
@@ -26,6 +92,28 @@ module.exports = app => {
     ]
     res.render('dividendi/dividendi', { id: 'dividendi', title: 'Dividendi', url: req.url, breadcrumbs })
   })
+
+  app.get('/analisi/:stock', hasIsin, (req, res) => {
+    const code = getStockCodeFromIsin(req.query.isin)
+    if (!code) {
+      res.render('404/404', { id: 'err404', title: 'Error 404' })
+      return
+    }
+    const name = getStockNameFromIsin(req.query.isin) || ''
+    const stock = {
+      isin: req.query.isin,
+      name: name,
+      encodedName: req.params.stock,
+      code: code
+    }
+    const breadcrumbs = [
+      {
+        name: name
+      }
+    ]
+    res.render('analisi/analisi', { id: 'analysis', title: 'Analisi titolo ' + name, url: req.url, stock, breadcrumbs })
+  })
+
   app.get('/performance-mensili', (req, res) => {
     const breadcrumbs = [
       {

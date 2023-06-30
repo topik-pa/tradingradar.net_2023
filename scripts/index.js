@@ -56,6 +56,11 @@ if (document.querySelector('body#dividendi')) {
     module.dividendi.init()
   })
 }
+if (document.querySelector('body#analysis')) {
+  import('../views/analisi/analisi.js').then((module) => {
+    module.analisi.init()
+  })
+}
 if (document.querySelector('body#perf-month-view')) {
   import('../views/landing/mensili.js').then((module) => {
     module.perfMonthView.init()

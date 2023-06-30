@@ -17,6 +17,7 @@
 @import "/components/shared/header/social-icons/social-icons.css";
 @import "/components/shared/sources/sources.css";
 @import "/components/shared/header/breadcrumbs/breadcrumbs.css";
+@import "/components/analisi/stock_info/stock_info.css";
 @import "/components/shared/footer/footer.css";
 @import "/components/shared/disclaimer/disclaimer.css";
 @import "/components/shared/cookie_layer/cookie_layer.css";
@@ -34,5 +35,6 @@
 @import "/views/landing/ribassiste.css";
 @import "/views/landing/inver-rialzista.css";
 @import "/views/landing/inver-ribassista.css";
+@import "/views/analisi/analisi.css";
 
 @import "./responsive.css";
