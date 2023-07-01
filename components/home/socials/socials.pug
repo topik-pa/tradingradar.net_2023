@@ -1,14 +1,25 @@
+-
+  let fbPost0 = process.env.FB_POST_0
+  let fbPost1 = process.env.FB_POST_1
+  let fbPost2 = process.env.FB_POST_2
+  let fbPost3 = process.env.FB_POST_3
+  let fbPost4 = process.env.FB_POST_4
+
 section(id="socials")
   div
-    h2 Tieniti informato: segui i nostri post sui nostri Social
+    h2 Segui le ultime analisi tecniche e partecipa ai sondaggi su Telegram
     p Ogni giorno pubblichiamo analisi, aggiornamenti, sondaggi e notizie tramite le nostre Pagine o Canali
-    div
-      h3 Facebook
-      div(class="fb-page", data-href="https://www.facebook.com/tradingradar/", data-tabs="timeline", data-width="320", data-height="", data-small-header="false", data-adapt-container-width="true", data-hide-cover="false", data-show-facepile="true")
-        blockquote(cite="https://www.facebook.com/tradingradar/", class="fb-xfbml-parse-ignore")
-          a(href="https://www.facebook.com/tradingradar/") tradingradar.net
-      div 
-        h3 Telegram
-        script(async, src="https://telegram.org/js/telegram-widget.js?22", data-telegram-discussion="tradingradarnet/1", data-comments-limit="5")
+    div(class="fb")
+      div(class="fb-post", data-href='https://www.facebook.com/tradingradar/posts/' + fbPost0, data-width="350", data-show-text="true")
+        blockquote(cite='https://www.facebook.com/tradingradar/posts/' + fbPost0, class="fb-xfbml-parse-ignore")
+      div(class="fb-post", data-href='https://www.facebook.com/tradingradar/posts/' + fbPost1, data-width="350", data-show-text="true")
+        blockquote(cite='https://www.facebook.com/tradingradar/posts/' + fbPost1, class="fb-xfbml-parse-ignore")
+      div(class="fb-post", data-href='https://www.facebook.com/tradingradar/posts/' + fbPost2, data-width="350", data-show-text="true")
+        blockquote(cite='https://www.facebook.com/tradingradar/posts/' + fbPost2, class="fb-xfbml-parse-ignore")
+      div(class="fb-post", data-href='https://www.facebook.com/tradingradar/posts/' + fbPost3, data-width="350", data-show-text="true")
+        blockquote(cite='https://www.facebook.com/tradingradar/posts/' + fbPost3, class="fb-xfbml-parse-ignore")
+      div(class="fb-post", data-href='https://www.facebook.com/tradingradar/posts/' + fbPost4, data-width="350", data-show-text="true")
+        blockquote(cite='https://www.facebook.com/tradingradar/posts/' + fbPost4, class="fb-xfbml-parse-ignore")
+
 
   
