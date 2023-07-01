@@ -26,11 +26,10 @@
     display: block;
   }
   #main-menu {
-    top: 0;
+    top: 6rem;
     width: 70%;
     right: -70%;
-    position: absolute;
-    display: block;
+    position: fixed;
     transition: right .4s ease-out;
     background-color: var(--lighter-gray);
   }
