@@ -1,11 +1,14 @@
 
-#socials div.fb {
+#almodovar div.fb {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
   flex-wrap: wrap;
 }
-#socials div.fb > div {
+#almodovar div.fb > div {
   margin-top: var(--normal-space);
   width: 350px!important;
+}
+#almodovar h3 {
+  margin-bottom: var(--small-space);
 }

@@ -192,6 +192,9 @@ p.source, p.detection {
  .menu a[data-target="downinversion"]::before {
   content: "\e9a9";
 }
+.menu a[data-target="almodovar"]::before {
+  content: "\e99b";
+}
 
 @media screen and (max-width: 768px) {
   .table-wrapper > div {

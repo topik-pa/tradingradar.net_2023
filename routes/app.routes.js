@@ -34,14 +34,6 @@ function getStocksList () {
 }
 getStocksList()
 
-function capitalize (text) {
-  const words = text.split(' ')
-  for (let i = 0; i < words.length; i++) {
-    words[i] = words[i][0].toUpperCase() + words[i].substr(1)
-  }
-  return words.join(' ')
-}
-
 function hasIsin (req, res, next) {
   if (req.query.isin) return next()
   res.render('404/404', { id: 'err404', title: 'Error 404' })
@@ -108,6 +100,10 @@ module.exports = app => {
       code: code
     }
     const breadcrumbs = [
+      {
+        name: 'Titoli',
+        url: '/titoli'
+      },
       {
         name: name
       }
