@@ -3,7 +3,6 @@ import stockAlerts from '../../components/analisi/stock_alerts/stock_alerts.js'
 
 export const analisi = {
   init: async () => {
-    console.log('analisi...')
     const stockInfoData = await stockInfo.init()
     await stockAlerts.init(stockInfoData)
   }

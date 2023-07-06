@@ -43,7 +43,6 @@ function printData (stocks, target, key) {
 
 export const dividendi = {
   init: () => {
-    console.log('Dividendi')
     $root = document.getElementById('dividens')
     statuses = ['idle', 'loading', 'success', 'error']
     updateUI(statuses[1])

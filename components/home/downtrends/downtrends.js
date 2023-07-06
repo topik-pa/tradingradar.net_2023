@@ -39,7 +39,6 @@ function printData (stocks, target) {
 
 const downTrends = {
   init: (stocks) => {
-    console.log('downtrends')
     $root = document.getElementById('downtrends')
     printData(stocks, 'table')
   }

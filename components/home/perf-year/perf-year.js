@@ -39,7 +39,6 @@ function printData (stocks, target) {
 
 const perfYear = {
   init: () => {
-    console.log('perf-year')
     $root = document.getElementById('perf-year')
     statuses = ['idle', 'loading', 'success', 'error']
     updateUI(statuses[1])

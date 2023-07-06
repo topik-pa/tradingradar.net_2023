@@ -34,3 +34,7 @@ ul.rank li:nth-child(2) a:before {
 ul.rank li:nth-child(3) a:before {
   color: var(--bronze);
 }
+
+ul.trlist li:nth-child(odd) {
+  background-color: var(--lightest-gray);
+}

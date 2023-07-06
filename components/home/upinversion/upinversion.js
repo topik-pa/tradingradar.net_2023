@@ -35,7 +35,6 @@ function printData (stocks, target) {
 
 const upInversion = {
   init: (stocks) => {
-    console.log('upinversion')
     $root = document.getElementById('upinversion')
     printData(stocks, 'table')
   }

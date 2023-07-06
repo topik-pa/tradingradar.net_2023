@@ -56,7 +56,6 @@ function printData (stocks, target) {
 
 export const downTrendsView = {
   init: () => {
-    console.log('downTrendsView')
     $root = document.getElementById('downtrends')
     statuses = ['idle', 'loading', 'success', 'error']
     updateUI(statuses[1])

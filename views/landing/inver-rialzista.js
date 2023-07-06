@@ -56,7 +56,6 @@ function printData (stocks, target) {
 
 export const upInversionView = {
   init: () => {
-    console.log('upInversionView')
     $root = document.getElementById('upinversion')
     statuses = ['idle', 'loading', 'success', 'error']
     updateUI(statuses[1])

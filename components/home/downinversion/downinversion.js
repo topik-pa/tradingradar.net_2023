@@ -36,7 +36,6 @@ function printData (stocks, target) {
 
 const downInversion = {
   init: (stocks) => {
-    console.log('downinversion')
     $root = document.getElementById('downinversion')
     printData(stocks, 'table')
   }

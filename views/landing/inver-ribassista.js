@@ -56,7 +56,6 @@ function printData (stocks, target) {
 
 export const downInversionView = {
   init: () => {
-    console.log('downInversionView')
     $root = document.getElementById('downinversion')
     statuses = ['idle', 'loading', 'success', 'error']
     updateUI(statuses[1])

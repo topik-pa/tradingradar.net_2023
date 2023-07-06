@@ -55,7 +55,6 @@ function printData (stocks, target) {
 
 export const target = {
   init: () => {
-    console.log('Target')
     $root = document.getElementById('target-price')
     statuses = ['idle', 'loading', 'success', 'error']
     updateUI(statuses[1])

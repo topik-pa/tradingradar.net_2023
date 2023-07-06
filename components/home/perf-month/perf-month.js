@@ -39,7 +39,6 @@ function printData (stocks, target) {
 
 const perfMonth = {
   init: () => {
-    console.log('perf-month')
     $root = document.getElementById('perf-month')
     statuses = ['idle', 'loading', 'success', 'error']
     updateUI(statuses[1])

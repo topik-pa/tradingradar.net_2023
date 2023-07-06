@@ -1,5 +1,3 @@
 export const err404 = {
-  init: async () => {
-    console.log('404')
-  }
+  init: async () => {}
 }
