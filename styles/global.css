@@ -44,6 +44,16 @@ main section:nth-child(even) ul li:nth-child(odd) {
 a {
   color: var(--blue);
   text-decoration: none;
+  position: relative;
+}
+a.ext::after {
+  content: '\21F1';
+  transform: rotate(90deg);
+  display: inline-block;
+  position: absolute;
+  top: -4px;
+  font-size: 12px;
+  right: -9px;
 }
 
 em, .em {
@@ -140,61 +150,6 @@ p.source, p.detection {
 
 .table-wrapper table th {
   font-weight: 500;
-}
-
-/* Menu selezioni titoli */
-.menu p {
-  display: flex;
-  align-items: center;
-  margin: var(--normal-space) 0;
-}
- .menu em {
-  margin-right: var(--small-space);
-}
- .menu a {
-  margin-right: var(--x-large-space);
-  text-shadow: var(--text-shadow);
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-}
- .menu a[data-target]::before {
-  font-family: 'icomoon' !important;
-  font-size: var(--font-size-bigger);
-  margin-right: var(--x-small-space);
-  margin-bottom: var(--small-space);
-  vertical-align: text-bottom;
-  text-shadow: 1px 1px var(--black);
-  color: var(--light-gray);
-
-  border: 1px solid var(--light-gray);
-  padding: var(--x-small-space);
-  border-radius: var(--border-radius-round);
-}
-.menu a[data-target]:hover:before {
-  text-shadow: 1px 1px var(--red);
-  border-color: var(--darker-gray);
-}
- .menu a[data-target="perf-month"]::before {
-  content: "\e9a5";
-}
- .menu a[data-target="perf-year"]::before {
-  content: "\e9a5";
-}
- .menu a[data-target="uptrends"]::before {
-  content: "\e9b5";
-}
- .menu a[data-target="downtrends"]::before {
-  content: "\e9b5";
-}
- .menu a[data-target="upinversion"]::before {
-  content: "\e9a9";
-}
- .menu a[data-target="downinversion"]::before {
-  content: "\e9a9";
-}
-.menu a[data-target="almodovar"]::before {
-  content: "\e99b";
 }
 
 @media screen and (max-width: 768px) {

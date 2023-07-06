@@ -24,7 +24,6 @@ goToHash()
 // Go to the relative hash section
 function goToSection () {
   const $anchors = document.querySelectorAll('a[data-target]')
-
   for (const anchor of $anchors) {
     anchor.addEventListener('click', (e) => {
       if (e.target.href) return
@@ -54,11 +53,6 @@ if (document.querySelector('body#target')) {
 if (document.querySelector('body#dividendi')) {
   import('../views/dividendi/dividendi.js').then((module) => {
     module.dividendi.init()
-  })
-}
-if (document.querySelector('body#analysis')) {
-  import('../views/analisi/analisi.js').then((module) => {
-    module.analisi.init()
   })
 }
 if (document.querySelector('body#perf-month-view')) {
@@ -94,6 +88,11 @@ if (document.querySelector('body#downinversion-view')) {
 if (document.querySelector('body#privacy')) {
   import('../views/privacy/privacy.js').then((module) => {
     module.privacy.init()
+  })
+}
+if (document.querySelector('body#analysis')) {
+  import('../views/analisi/analisi.js').then((module) => {
+    module.analisi.init()
   })
 }
 if (document.querySelector('body#err404')) {

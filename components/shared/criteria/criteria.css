@@ -1,0 +1,52 @@
+#criteria p {
+  display: flex;
+  align-items: center;
+  margin: var(--large-space) 0;
+}
+ #criteria em {
+  margin-right: var(--small-space);
+}
+ #criteria a {
+  margin-right: var(--x-large-space);
+  text-shadow: var(--text-shadow);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+ #criteria a[data-target]::before {
+  font-family: 'icomoon' !important;
+  font-size: var(--font-size-bigger);
+  margin-right: var(--xx-small-space);
+  vertical-align: text-bottom;
+  text-shadow: 1px 1px var(--black);
+  color: var(--light-gray);
+
+  border: 1px solid var(--light-gray);
+  padding: var(--x-small-space);
+  border-radius: var(--border-radius-round);
+}
+#criteria a[data-target]:hover:before {
+  text-shadow: 1px 1px var(--red);
+  border-color: var(--darker-gray);
+}
+ #criteria a[data-target="perf-month"]::before {
+  content: "\e9a5";
+}
+ #criteria a[data-target="perf-year"]::before {
+  content: "\e9a5";
+}
+ #criteria a[data-target="uptrends"]::before {
+  content: "\e9b5";
+}
+ #criteria a[data-target="downtrends"]::before {
+  content: "\e9b5";
+}
+ #criteria a[data-target="upinversion"]::before {
+  content: "\e9a9";
+}
+ #criteria a[data-target="downinversion"]::before {
+  content: "\e9a9";
+}
+#criteria a[data-target="almodovar"]::before {
+  content: "\e99b";
+}

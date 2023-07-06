@@ -16,22 +16,9 @@ block append meta
 
 block main
   h1 Trova ora le Azioni più interessanti della Borsa Italiana
-  p Scopri #[em in tempo reale] quali titoli azionari stanno generando segnali cruciali secondo i principi dell'#[em Analisi Tecnica].
+  p Scopri #[em in tempo reale] quali titoli azionari stanno generando segnali cruciali secondo i principi dell'#[a(class="ext", href="http://www.traderpedia.it/wiki/index.php/Categoria:Analisi_tecnica")  Analisi Tecnica].
   include ../components/shared/sources/sources.pug
-  div(class="menu")
-    h3 I criteri di selezione
-    p I titoli azionari selezionati in base all'Analisi Tecnica
-    p #[em Performance:]
-      a(data-target="perf-month") Performance mensili
-      a(data-target="perf-year") Performance annuali
-    p #[em Trend:]
-      a(data-target="uptrends") Titoli in trend rialzista
-      a(data-target="downtrends") Titoli in trend ribassista
-    p #[em Inversione:]
-      a(data-target="upinversion") Titoli in inversione rialzista
-      a(data-target="downinversion") Titoli in inversione ribassista
-    p #[em Analisi Tecniche:]
-      a(data-target="almodovar") Titoli sull'orlo di una Crisi di Nervi
+  include ../components/shared/criteria/criteria.pug
   include ../components/home/perf-month/perf-month.pug
   include ../components/home/perf-year/perf-year.pug
   include ../components/home/uptrends/uptrends.pug

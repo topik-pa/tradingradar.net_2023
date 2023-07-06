@@ -26,7 +26,9 @@ Sistemare colori anche nel caso dark
 Sitemap xml: aggiungere url singoli titoli
 Controllare tutti i redirect e proxy delle rotte vecchie
 
+Renaming variabili
 
+OG tags
 
 
 pagina e sezione sostenitori
