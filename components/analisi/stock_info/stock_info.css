@@ -7,9 +7,9 @@
   border: 1px solid var(--black);
 }
 
-#stock_info div h2 {
+#stock_info h2 {
   border-bottom: 1px solid var(--gray);
-  margin-top: var(--xxx-large-space)
+  margin-top: var(--xx-large-space)
 }
 
 #stock_info h1 span {
@@ -120,6 +120,10 @@
 
 #stock_info .info > p, #stock_info .analysis > p, #stock_info .news > p{
   margin-bottom: var(--normal-space);
+}
+
+#stock_info .news li {
+  margin: var(--small-space);
 }
 
 @media screen and (max-width: 768px) {

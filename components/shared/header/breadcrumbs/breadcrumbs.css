@@ -14,9 +14,10 @@
 
 #breadcrumbs a:not(:first-child)::before {
   content: '\2192';
-  vertical-align: baseline;
+  vertical-align: text-bottom;
   margin: 0.2rem;
   color: var(--primary);
+  font-size: var(--font-size-bigger);
 }
 #breadcrumbs a {
   color: var(--primary);

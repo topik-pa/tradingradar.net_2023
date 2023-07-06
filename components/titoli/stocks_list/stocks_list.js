@@ -32,7 +32,7 @@ function alphabetShowHideStocks (letter = 'A') {
 
 const stocksList = {
   init: () => {
-    $root = document.getElementById('stocks_list')
+    $root = document.getElementById('select_stock')
     $alphabet = $root.getElementsByClassName('alphabet')[0]
     $stocks = $root.getElementsByClassName('stocks')[0]
     activeLetters = new Set()

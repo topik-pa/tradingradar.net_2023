@@ -134,6 +134,7 @@ function printNewsData () {
     const $a = document.createElement('a')
     $a.innerText = item.title
     $a.title = item.title
+    $a.className = 'ext'
     $a.href = item.url
     $a.target = '_blank'
     $a.rel = 'noopener noreferrer'

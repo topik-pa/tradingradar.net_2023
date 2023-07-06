@@ -1,5 +1,5 @@
 
-section(id="stock_info")
+div(id="stock_info")
   img(src=('/assets/images/stocks/' + stock.code + '-min.png'), alt=stock.name)
   h1 #[span #{stock.name}] - Informazioni, Analisi Tecnica e Rassegna Stampa
   h3 Tutti i dati sono forniti in #[em tempo reale] interrogando direttamente le fonti originali
@@ -15,15 +15,15 @@ section(id="stock_info")
         div(class="profile")
           h3 Profilo 
           div 
-            a(href="#", target="_blank", rel="noopener noreferrer") [continua sul sito originale]
+            a(class="ext", href="#", target="_blank", rel="noopener noreferrer") [continua sul sito originale]
         div(class="comment")
           h3 Commento
           div 
-            a(href="#", target="_blank", rel="noopener noreferrer") [continua sul sito originale]
+            a(class="ext", href="#", target="_blank", rel="noopener noreferrer") [continua sul sito originale]
       div(class="second")
         div(class="dividends")
           h3 Dividendi 
-            a(href="#", target="_blank", rel="noopener noreferrer") [Fonte]
+            a(class="ext", href="#", target="_blank", rel="noopener noreferrer") [Fonte]
           div 
             div(class="divYield") Div. Yield (%): 
               span
@@ -33,7 +33,7 @@ section(id="stock_info")
               span
         div(class="average")
           h3 Medie mobili 
-            a(href="#", target="_blank", rel="noopener noreferrer") [Fonte]
+            a(class="ext", href="#", target="_blank", rel="noopener noreferrer") [Fonte]
           div 
             div(class="mm20") Media mobile 20 gg (€): 
               span
@@ -43,7 +43,7 @@ section(id="stock_info")
               span
         div(class="minmax")
           h3 Minimi e massimi
-            a(href="#", target="_blank", rel="noopener noreferrer") [Fonte]
+            a(class="ext", href="#", target="_blank", rel="noopener noreferrer") [Fonte]
           div 
             div(class="absMax") Massimo assoluto: 
               span
@@ -55,7 +55,7 @@ section(id="stock_info")
               span              
         div(class="performance")
           h3 Performance
-            a(href="#", target="_blank", rel="noopener noreferrer") [Fonte]
+            a(class="ext", href="#", target="_blank", rel="noopener noreferrer") [Fonte]
           div 
             div(class="perf1M") Performance (1 mese): 
               span
@@ -69,7 +69,7 @@ section(id="stock_info")
     div 
       div(class="borsa-italiana img_icon")
         h3 
-          a(href="#", target="_blank", rel="noopener noreferrer") Borsa Italiana
+          a(class="ext", href="#", target="_blank", rel="noopener noreferrer") Borsa Italiana
         ul
           li(class="resistance") Resistenza (€): 
             span
@@ -81,28 +81,28 @@ section(id="stock_info")
             span
           li(class="rating") Rating [0-4]: 
             span
-        p Analisi completa su #[a(href="#", title="Vai alla pagina originale" target="_blank", rel="noopener noreferrer") Borsa Italiana]
+        p Analisi completa su #[a(class="ext", href="#", title="Vai alla pagina originale" target="_blank", rel="noopener noreferrer") Borsa Italiana]
       div(class="il-sole-24-ore img_icon")
         h3 
-          a(href="#", target="_blank", rel="noopener noreferrer") Il Sole 24 Ore
+          a(class="ext", href="#", target="_blank", rel="noopener noreferrer") Il Sole 24 Ore
         ul
           li(class="short-tend") Tendenza breve periodo: 
             span
           li(class="med-tend") Tendenza medio periodo: 
             span
-        p Analisi completa su #[a(href="#", title="Vai alla pagina originale" target="_blank", rel="noopener noreferrer") Il Sole 24 Ore]
+        p Analisi completa su #[a(class="ext", href="#", title="Vai alla pagina originale" target="_blank", rel="noopener noreferrer") Il Sole 24 Ore]
       div(class="milano-finanza img_icon")
         h3 
-          a(href="#", target="_blank", rel="noopener noreferrer") Milano Finanza
+          a(class="ext", href="#", target="_blank", rel="noopener noreferrer") Milano Finanza
         ul
           li(class="rating") Rating [A-E]: 
             span
           li(class="risk") Risk [0-100]: 
             span
-        p Analisi completa su #[a(href="#", title="Vai alla pagina originale" target="_blank", rel="noopener noreferrer") Milano Finanza]           
+        p Analisi completa su #[a(class="ext", href="#", title="Vai alla pagina originale" target="_blank", rel="noopener noreferrer") Milano Finanza]           
       div(class="soldi-on-line img_icon")
         h3 
-          a(href="#", target="_blank", rel="noopener noreferrer") SoldiOnLine
+          a(class="ext", href="#", target="_blank", rel="noopener noreferrer") SoldiOnLine
         ul
           li(class="date") Data: 
             span
@@ -112,10 +112,10 @@ section(id="stock_info")
             span
           li(class="target") Target price (€): 
             span
-        p Analisi completa su #[a(href="#", title="Vai alla pagina originale" target="_blank", rel="noopener noreferrer") SoldiOnLine]  
+        p Analisi completa su #[a(class="ext", href="#", title="Vai alla pagina originale" target="_blank", rel="noopener noreferrer") SoldiOnLine]  
       div(class="teleborsa img_icon")
         h3 
-          a(href="#", target="_blank", rel="noopener noreferrer") Teleborsa
+          a(class="ext", href="#", target="_blank", rel="noopener noreferrer") Teleborsa
         ul
           li(class="resistance") Resistenza (€): 
             span
@@ -123,7 +123,7 @@ section(id="stock_info")
             span
           li(class="trend") Trend: 
             span
-        p Analisi completa su #[a(href="#", title="Vai alla pagina originale" target="_blank", rel="noopener noreferrer") Teleborsa]         
+        p Analisi completa su #[a(class="ext", href="#", title="Vai alla pagina originale" target="_blank", rel="noopener noreferrer") Teleborsa]         
   div(class="news loading")
     h2 Rassegna Stampa #{stock.name}
     p Le #[em ultime notizie] sul titolo #{stock.name} prese in tempo reale dalle nostre fonti esterne.
