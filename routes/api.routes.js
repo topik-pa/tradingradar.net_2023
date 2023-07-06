@@ -2,17 +2,20 @@ module.exports = app => {
   const api = require('../controllers/api.controller.js')
   const router = require('express').Router()
 
-  // GET
-  router.get('/stocks/perf1M', api.get)
-  router.get('/stocks/perf1Y', api.get)
-  router.get('/stocks/lastJudgment', api.get)
-  router.get('/stocks/lastDivDate', api.get)
-  router.get('/stocks/divYield', api.get)
-  router.get('/custom', api.get)
+  const GET = [
+    '/stocks/perf1M',
+    '/stocks/perf1Y',
+    '/stocks/lastJudgment',
+    '/stocks/lastDivDate',
+    '/stocks/divYield',
+    '/custom',
+    '/info/:isin',
+    '/analysis/:isin',
+    '/news/:isin'
+  ]
 
-  router.get('/info/:isin', api.get)
-  router.get('/analysis/:isin', api.get)
-  router.get('/news/:isin', api.get)
+  // GET
+  router.get(GET, api.get)
 
   app.use('/api', router)
 }

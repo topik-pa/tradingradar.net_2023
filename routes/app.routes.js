@@ -34,32 +34,33 @@ function getStocksList () {
 }
 getStocksList()
 
-function hasIsin (req, res, next) {
-  if (req.query.isin) return next()
-  res.render('404/404', { id: 'err404', title: 'Error 404' })
+function stockPageProxy (req, res, next) {
+  if (!req.query.isin) res.render('404/404', { id: 'err404', title: 'Error 404' })
+  const { name, code } = getStockNameAndCodeFromIsin(req.query.isin)
+  if (!code) res.render('404/404', { id: 'err404', title: 'Error 404' })
+  req.name = name
+  req.code = code
+  next()
 }
 
-function getStockNameFromIsin (isin) {
+function getStockNameAndCodeFromIsin (isin) {
   if (!stocks.length) return
   for (const stock of stocks) {
     if (stock.isin === isin) {
-      return stock.name
-    }
-  }
-}
-function getStockCodeFromIsin (isin) {
-  if (!stocks.length) return
-  for (const stock of stocks) {
-    if (stock.isin === isin) {
-      return stock.code
+      return {
+        name: stock.name,
+        code: stock.code
+      }
     }
   }
 }
 
 module.exports = app => {
+  // Home
   app.get('/', (req, res) => {
     res.render('home', { id: 'home', title: 'Home', url: req.url })
   })
+  // Titoli
   app.get('/titoli', (req, res) => {
     res.locals.stocks = stocks
     const breadcrumbs = [
@@ -69,6 +70,7 @@ module.exports = app => {
     ]
     res.render('titoli/titoli', { id: 'titoli', title: 'Titoli', url: req.url, breadcrumbs })
   })
+  // Targets and Judgements
   app.get('/target-price-raccomandazioni', (req, res) => {
     const breadcrumbs = [
       {
@@ -77,6 +79,7 @@ module.exports = app => {
     ]
     res.render('target/target', { id: 'target', title: 'Target Price e Raccomandazioni', url: req.url, breadcrumbs })
   })
+  // Dividends
   app.get('/dividendi', (req, res) => {
     const breadcrumbs = [
       {
@@ -85,19 +88,13 @@ module.exports = app => {
     ]
     res.render('dividendi/dividendi', { id: 'dividendi', title: 'Dividendi', url: req.url, breadcrumbs })
   })
-
-  app.get('/analisi/:stock', hasIsin, (req, res) => {
-    const code = getStockCodeFromIsin(req.query.isin)
-    if (!code) {
-      res.render('404/404', { id: 'err404', title: 'Error 404' })
-      return
-    }
-    const name = getStockNameFromIsin(req.query.isin) || ''
+  // Stock page
+  app.get('/analisi/:stock', stockPageProxy, (req, res) => {
     const stock = {
       isin: req.query.isin,
-      name: name,
+      name: req.name,
       encodedName: req.params.stock,
-      code: code
+      code: req.code
     }
     const breadcrumbs = [
       {
@@ -105,12 +102,12 @@ module.exports = app => {
         url: '/titoli'
       },
       {
-        name: name
+        name: stock.name
       }
     ]
-    res.render('analisi/analisi', { id: 'analysis', title: 'Analisi titolo ' + name, url: req.url, stock, breadcrumbs })
+    res.render('analisi/analisi', { id: 'analysis', title: 'Analisi titolo ' + stock.name, url: req.url, stock, breadcrumbs })
   })
-
+  // Landing: performance month
   app.get('/performance-mensili', (req, res) => {
     const breadcrumbs = [
       {
@@ -119,6 +116,7 @@ module.exports = app => {
     ]
     res.render('landing/mensili', { id: 'perf-month-view', title: 'Performance mensili', url: req.url, breadcrumbs })
   })
+  // Landing: performance year
   app.get('/performance-annuali', (req, res) => {
     const breadcrumbs = [
       {
@@ -127,6 +125,7 @@ module.exports = app => {
     ]
     res.render('landing/annuali', { id: 'perf-year-view', title: 'Performance annuali', url: req.url, breadcrumbs })
   })
+  // Landing: uptrends
   app.get('/azioni-italiane-rialziste', (req, res) => {
     const breadcrumbs = [
       {
@@ -135,6 +134,7 @@ module.exports = app => {
     ]
     res.render('landing/rialziste', { id: 'uptrend-view', title: 'Titoli azionari in trend rialzista', url: req.url, breadcrumbs })
   })
+  // Landing: downtrends
   app.get('/azioni-italiane-ribassiste', (req, res) => {
     const breadcrumbs = [
       {
@@ -143,6 +143,7 @@ module.exports = app => {
     ]
     res.render('landing/ribassiste', { id: 'downtrend-view', title: 'Titoli azionari in trend ribassista', url: req.url, breadcrumbs })
   })
+  // Landing: trend inv up
   app.get('/azioni-inversione-rialzista', (req, res) => {
     const breadcrumbs = [
       {
@@ -151,6 +152,7 @@ module.exports = app => {
     ]
     res.render('landing/inver-rialzista', { id: 'upinversion-view', title: 'Titoli azionari in inversione rialzista', url: req.url, breadcrumbs })
   })
+  // Landing: trend inv down
   app.get('/azioni-inversione-ribassista', (req, res) => {
     const breadcrumbs = [
       {
@@ -159,6 +161,7 @@ module.exports = app => {
     ]
     res.render('landing/inver-ribassista', { id: 'downinversion-view', title: 'Titoli azionari in inversione ribassista', url: req.url, breadcrumbs })
   })
+  // Privacy
   app.get('/privacy', (req, res) => {
     const breadcrumbs = [
       {

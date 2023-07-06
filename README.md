@@ -23,7 +23,11 @@ https://eslint.org/docs/user-guide/getting-started
 
 # TODO
 Sistemare colori anche nel caso dark
-Sitemap xml
+Sitemap xml: aggiungere url singoli titoli
+Controllare tutti i redirect e proxy delle rotte vecchie
+
+
+
 
 pagina e sezione sostenitori
 

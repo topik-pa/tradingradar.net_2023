@@ -12,7 +12,6 @@ const options = {
 // GET
 exports.get = async (req, res) => {
   options.method = req.method
-  // console.log(req)
   options.path = '/api' + req.url
 
   const request = http.request(options, function (response) {
