@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const { I18n } = require('i18n')
+// const { I18n } = require('i18n')
 const path = require('path')
 require('dotenv').config()
 const PORT = process.env.PORT || 3001
@@ -18,7 +18,7 @@ app.use('/public', express.static(path.join(__dirname, 'public')))
 app.use('/assets', express.static(path.join(__dirname, 'assets')))
 app.use('/dist', express.static(path.join(__dirname, 'dist')))
 
-const i18n = new I18n({
+/* const i18n = new I18n({
   locales: ['en', 'it'],
   defaultLocale: 'en',
   directory: path.join(__dirname, 'locales')
@@ -26,7 +26,7 @@ const i18n = new I18n({
 app.use((req, res, next) => {
   i18n.init(req, res)
   next()
-})
+}) */
 
 // Use absolute path in pug imports
 app.locals.basedir = path.join(__dirname, '/')
