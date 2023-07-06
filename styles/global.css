@@ -146,6 +146,7 @@ p.source, p.detection {
 .menu p {
   display: flex;
   align-items: center;
+  margin: var(--normal-space) 0;
 }
  .menu em {
   margin-right: var(--small-space);

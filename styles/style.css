@@ -17,6 +17,7 @@
 @import "/components/shared/header/social-icons/social-icons.css";
 @import "/components/shared/sources/sources.css";
 @import "/components/shared/header/breadcrumbs/breadcrumbs.css";
+@import "/components/shared/support/support.css";
 @import "/components/analisi/stock_info/stock_info.css";
 @import "/components/shared/footer/footer.css";
 @import "/components/shared/disclaimer/disclaimer.css";
@@ -24,6 +25,7 @@
 @import "/components/shared/goto_top/goto_top.css";
 @import "/components/analisi/stock_alerts/stock_alerts.css";
 @import "/components/titoli/stocks_list/stocks_list.css";
+
 
 @import "/views/home.css";
 @import "/views/titoli/titoli.css";
