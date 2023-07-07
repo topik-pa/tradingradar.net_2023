@@ -23,28 +23,17 @@ https://eslint.org/docs/user-guide/getting-started
 
 # TODO
 Sistemare colori anche nel caso dark
-Sitemap xml: aggiungere url singoli titoli
 Controllare tutti i redirect e proxy delle rotte vecchie
 
 Renaming variabili
 
 OG tags
 
-
 pagina e sezione sostenitori
-
-una sezione social ogni sezione
-un paragrafo specifico per ogni sezione social
-
-una sezione per un analisi specifica
-una pagina per le analisi storiche
-
-pagine analisi titolo
-pagine altre menu
 
 cookie privacy
 meta tag head
 
 json schema
 
-tutti i redirects previsti nella vecchia versione
+Pagina Contatti
