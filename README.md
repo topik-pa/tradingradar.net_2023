@@ -22,22 +22,16 @@ https://eslint.org/docs/user-guide/getting-started
 
 
 # TODO
-
-Controllare tutti i redirect e proxy delle rotte vecchie
-
-Renaming variabili
-
 OG tags
 
 pagina e sezione sostenitori
 
-cookie privacy
 meta tag head
-
-json schema
 
 Sistemare colori anche nel caso dark e grafica generale
 
 Pagina Contatti
 
 Better 404
+
+Renaming variabili
