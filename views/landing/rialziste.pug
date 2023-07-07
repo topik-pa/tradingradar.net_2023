@@ -2,9 +2,8 @@ extends ../layout.pug
 
 block append meta
   title #{title} | #{proj_name}
-  meta(name="description" content="")
-  meta(name="keywords" content="")
-  meta(name="robots" content="")
+  meta(name="description" content="Azioni Italiane con Trend Rialzista")
+  meta(name="keywords" content="trend, rialzista, azioni, italiane, borsa")
   link(rel="canonical", href=proj_url + url)
 
   meta(name="og:url" content="")
@@ -19,17 +18,7 @@ block main
   p Scopri #[em in tempo reale] quali titoli azionari stanno generando segnali cruciali secondo i principi dell'#[em Analisi Tecnica].
   include ../../components/shared/sources/sources.pug
   include ../../components/home/uptrends/uptrends.pug
-  div(class="menu")
-    h3 Scopri le altre Classifiche e Selezioni
-    p Titoli azionari selezionati in base ai #[em criteri di Analisi Tecnica]
-    p #[em Performance:]
-      a(data-target="perf-month", href="/#perf-month") Performance mensili
-      a(data-target="perf-year", href="/#perf-year") Performance annuali
-    p #[em Trend:]
-      a(data-target="downtrends", href="/#downtrends") Titoli in trend ribassista
-    p #[em Inversione:]
-      a(data-target="upinversion", href="/#upinversion") Titoli in inversione rialzista
-      a(data-target="downinversion", href="/#downinversion") Titoli in inversione ribassista
+  include ../../components/shared/criteria/criteria.pug
 
 block prepend footer
   include ../../components/shared/disclaimer/disclaimer.pug

@@ -1,9 +1,9 @@
 extends ../layout.pug
 
 block append meta
-  title #{stock.name} - Informazioni, Analisi Tecnica, Target e Rassegna Stampa
-  meta(name="description" content="Analisi, Target price e Rassegna Stampa di " + stock.name) 
-  meta(name="keywords" content=stock.name + ", analisi, target, price, informazioni, rassegna, stampa, titolo")
+  title #{stock.name} - Informazioni, Analisi Tecnica e Rassegna Stampa | #{proj_name}
+  meta(name="description" content="Analisi e Rassegna Stampa del titolo " + stock.name) 
+  meta(name="keywords" content=stock.name + ", analisi, informazioni, rassegna, stampa, titolo, azione")
 
   meta(name="og:url" content=proj_url + '/analisi/' + stock.encodedName + '?isin=' + stock.isin)
   meta(name="og:type" content="website")
