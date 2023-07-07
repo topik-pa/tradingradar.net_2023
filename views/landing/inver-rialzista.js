@@ -1,5 +1,5 @@
 import proxyFetch from '../../../scripts/proxyFetch.js'
-let $root; let statuses; const url = 'api/custom'
+let $root; let statuses; const url = '/api/custom'
 
 async function callTheApi () {
   try {

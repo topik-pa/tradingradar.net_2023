@@ -22,7 +22,7 @@ https://eslint.org/docs/user-guide/getting-started
 
 
 # TODO
-Sistemare colori anche nel caso dark
+
 Controllare tutti i redirect e proxy delle rotte vecchie
 
 Renaming variabili
@@ -36,4 +36,8 @@ meta tag head
 
 json schema
 
+Sistemare colori anche nel caso dark e grafica generale
+
 Pagina Contatti
+
+Better 404

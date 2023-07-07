@@ -11,7 +11,7 @@ const custApiElements = document.querySelectorAll('#downinversion, #upinversion,
 
 async function callCustomApi () {
   try {
-    const res = await proxyFetch('api/custom')
+    const res = await proxyFetch('/api/custom')
     updateUI(statuses[2])
     upTrends.init(res.body.uptrends)
     downTrends.init(res.body.downtrends)

@@ -55,6 +55,20 @@ function getStockNameAndCodeFromIsin (isin) {
   }
 }
 
+const oldRoutes = [
+  '/en',
+  '/it',
+  '/fr',
+  '/en/analyses',
+  '/it/analyses',
+  '/fr/analyses',
+  '/market/',
+  '/market/:param',
+  '/market/en/:param',
+  '/market/it/:param',
+  '/market/fr/:param'
+]
+
 module.exports = app => {
   // Home
   app.get('/', (req, res) => {
@@ -169,5 +183,31 @@ module.exports = app => {
       }
     ]
     res.render('privacy/privacy', { id: 'privacy', title: 'Privacy', url: req.url, breadcrumbs })
+  })
+  // Old stock analysis route
+  app.get('/stock/:param', stockPageProxy, (req, res) => {
+    if (!req.query.isin) {
+      res.render('home', { id: 'home', title: 'Home', url: req.url })
+    }
+    const stock = {
+      isin: req.query.isin,
+      name: req.name,
+      encodedName: req.name,
+      code: req.code
+    }
+    const breadcrumbs = [
+      {
+        name: 'Titoli',
+        url: '/titoli'
+      },
+      {
+        name: stock.name
+      }
+    ]
+    res.render('analisi/analisi', { id: 'analysis', title: 'Analisi titolo ' + stock.name, url: req.url, stock, breadcrumbs })
+  })
+  // Redirects
+  app.get(oldRoutes, (req, res) => {
+    res.render('home', { id: 'home', title: 'Home', url: req.url })
   })
 }

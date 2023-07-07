@@ -1,5 +1,5 @@
 import proxyFetch from '../../../scripts/proxyFetch.js'
-let $root; let statuses; const url = 'api/stocks/perf1M/?order=desc'
+let $root; let statuses; const url = '/api/stocks/perf1M/?order=desc'
 
 async function callTheApi () {
   try {

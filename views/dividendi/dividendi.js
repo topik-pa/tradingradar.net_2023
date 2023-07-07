@@ -1,8 +1,8 @@
 import proxyFetch from '../../../scripts/proxyFetch.js'
 let $root
 let statuses
-const urlYield = 'api/stocks/divYield/?order=desc'
-const urlDate = 'api/stocks/lastDivDate/?order=desc'
+const urlYield = '/api/stocks/divYield/?order=desc'
+const urlDate = '/api/stocks/lastDivDate/?order=desc'
 
 async function callTheApi () {
   try {
