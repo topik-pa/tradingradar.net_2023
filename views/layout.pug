@@ -54,4 +54,21 @@ html
         gtag('config', "#{GATagId}");
       script(async, defer, src='https://www.statcounter.com/counter/counter.js')
       script(async, defer, src="https://www.googletagmanager.com/gtag/js?id=" + GATagId)
+      script(type='application/ld+json').
+          {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "url": "#{proj_url}",
+            "name": "#{proj_name}",
+            "description": "#{description}",
+            "image": "https://www.tradingradar.net/assets/images/logo.png",
+            "author": {
+              "@type": "Person",
+              "name": "#{owner}"
+            },
+            "copyrightHolder": {
+              "@type": "Person",
+              "name": "#{owner}"
+            }
+          }
     
