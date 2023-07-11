@@ -4,13 +4,13 @@ block append meta
   title #{title} | #{proj_name}
   meta(name="description" content=description)
   meta(name="keywords" content="performance, trend, analisi, tecniche, rialzi, ribassi, inversione, borsa, italiana")
-  link(rel="canonical", href=proj_url + url)
+  link(rel="canonical", href=proj_url)
 
-  meta(name="og:url" content="")
-  meta(name="og:type" content="")
-  meta(name="og:title" content="")
-  meta(name="og:site_name" content="")
-  meta(name="og:description" content="")
+  meta(name="og:url" content=proj_url)
+  meta(name="og:type" content="website")
+  meta(name="og:title" content=proj_tagline)
+  meta(name="og:site_name" content=proj_name)
+  meta(name="og:description" content=description)
   meta(name="og:image" content="")
 
 block main
