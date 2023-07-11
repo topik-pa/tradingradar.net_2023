@@ -26,12 +26,13 @@
     display: block;
   }
   #main-menu {
-    top: 6rem;
+    top: 7rem;
     width: 70%;
     right: -70%;
     position: fixed;
     transition: right .4s ease-out;
     background-color: var(--lighter-gray);
+    z-index: var(--main-menu);
   }
   #main-menu.show {
     right: 0;
@@ -50,6 +51,8 @@
   #main-menu li {
     display: flex;
     align-items: center;
+    border-bottom: 1px solid var(--light-gray);
+    padding: var(--small-space) 0;
   }
   #main-menu li a {
     padding: var(--normal-space) 0;

@@ -46,7 +46,7 @@
   justify-content: space-between;
 }
 #stock_info .second > div > div > div:nth-child(odd) {
-  background-color: var(--light-gray);
+  background-color: var(--lighter-gray);
 }
 
 
@@ -75,7 +75,7 @@
   justify-content: space-between;
 }
 #stock_info .analysis li:nth-child(odd) {
-  background-color: var(--light-gray);
+  background-color: var(--lighter-gray);
 }
 #stock_info .analysis p {
   margin-top: var(--normal-space);

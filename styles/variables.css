@@ -77,9 +77,10 @@
 
   /* Z-INDEXES */
   --loading: 9;
-  --modal: 99;
-  --privacy: 999;
-  --gototop: 9999;
+  --main-menu: 99;
+  --modal: 999;
+  --privacy: 9999;
+  --gototop: 99999;
 }
 
 .dark:root {

@@ -3,26 +3,27 @@
   let fbPost1 = process.env.FB_POST_1
   let fbPost2 = process.env.FB_POST_2
   let fbPost3 = process.env.FB_POST_3
-  let fbPost4 = process.env.FB_POST_4
+  let telPost0 = process.env.TEL_POST_0
 
 section(id="almodovar")
   div
     h2 Segui le analisi tecniche dai Titoli più interessanti in base alla loro Analisi Tecnica
-    p Ogni giorno pubblichiamo analisi, aggiornamenti, sondaggi e notizie tramite le nostre Pagine o Canali
+    p Ogni giorno pubblichiamo analisi, aggiornamenti, sondaggi e notizie tramite le #[em nostre Pagine o Canali]
     div(class="fb")
+
       div(class="fb-post", data-href='https://www.facebook.com/tradingradar/posts/' + fbPost0, data-width="350", data-show-text="true")
         blockquote(cite='https://www.facebook.com/tradingradar/posts/' + fbPost0, class="fb-xfbml-parse-ignore")
+
+      div 
+        h3 Su Telegram puoi partecipare #[em Sondaggi] ed accedere ai contenuti aggiornati
+        div
+          script(async, src="https://telegram.org/js/telegram-widget.js?22", data-telegram-post=telPost0, data-width="100%", data-userpic="false")
+
       div(class="fb-post", data-href='https://www.facebook.com/tradingradar/posts/' + fbPost1, data-width="350", data-show-text="true")
         blockquote(cite='https://www.facebook.com/tradingradar/posts/' + fbPost1, class="fb-xfbml-parse-ignore")
       div(class="fb-post", data-href='https://www.facebook.com/tradingradar/posts/' + fbPost2, data-width="350", data-show-text="true")
         blockquote(cite='https://www.facebook.com/tradingradar/posts/' + fbPost2, class="fb-xfbml-parse-ignore")
       div(class="fb-post", data-href='https://www.facebook.com/tradingradar/posts/' + fbPost3, data-width="350", data-show-text="true")
         blockquote(cite='https://www.facebook.com/tradingradar/posts/' + fbPost3, class="fb-xfbml-parse-ignore")
-      div(class="fb-post", data-href='https://www.facebook.com/tradingradar/posts/' + fbPost4, data-width="350", data-show-text="true")
-        blockquote(cite='https://www.facebook.com/tradingradar/posts/' + fbPost4, class="fb-xfbml-parse-ignore")
-  div 
-    h3 Siamo anche su Telegram con i #[em Sondaggi], discussioni e contenuti aggiornati
-    script(async, src="https://telegram.org/js/telegram-widget.js?22", data-telegram-post="tradingradarnet/1", data-width="100%", data-userpic="false")
-
 
   

@@ -6,7 +6,7 @@
   flex-wrap: wrap;
 }
 #almodovar div.fb > div {
-  margin-top: var(--normal-space);
+  margin-top: var(--xx-large-space);
   width: 350px!important;
 }
 #almodovar h3 {

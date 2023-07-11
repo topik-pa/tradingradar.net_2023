@@ -32,10 +32,10 @@ a.ext::after {
   content: '\21F1';
   transform: rotate(90deg);
   display: inline-block;
-  position: absolute;
-  top: -4px;
-  font-size: 12px;
-  right: -9px;
+  position: relative;
+  top: -3px;
+  font-size: 9px;
+  right: 0;
 }
 
 em, .em {
