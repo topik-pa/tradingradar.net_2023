@@ -22,11 +22,7 @@ https://eslint.org/docs/user-guide/getting-started
 
 
 # TODO
-OG tags
-
-pagina e sezione sostenitori
-
-meta tag head
+OG tags image
 
 Sistemare colori anche nel caso dark e grafica generale
 

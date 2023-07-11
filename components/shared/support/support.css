@@ -1,3 +1,24 @@
 #support div {
   text-align: center;
+  margin: var(--normal-space);
+}
+
+#support .nopals {
+  font-style: italic;
+  text-align: center;
+  margin-top: var(--large-space)
+}
+
+#support h2 {
+  color: #990000;
+}
+
+#paypals {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: var(--x-large-space);
+}
+#paypals p {
+  width: 15rem;
 }

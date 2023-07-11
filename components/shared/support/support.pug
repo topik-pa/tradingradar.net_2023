@@ -1,8 +1,35 @@
+- 
+  let paypals = [
+    {
+      name: 'Marco Pavan',
+      url: 'https://www.facebook.com/tradingradar/',
+      img: 'AC5-min',
+      text: 'Una mia piccola donazione'
+    },
+    {
+      name: 'Gigi Mancuso',
+      url: 'https://www.facebook.com/tradingradar/',
+      img: 'AC5-min',
+      text: 'La lista delle azioni della Borsa Italiana il cui prezzo, dopo una fase di ribasso, negli ultimi giorni è salito sopra le media a 20gg e 40gg.'
+    }
+  ]
+
 section(id="support")
   h2 Aspetta... Queste informazioni ti sono state utili?
-  p Come vedi #[em tradingradar.net non ha pubblicità e non richiede abbonamenti], ma ha comunque dei costi di servizio e richiede molto tempo per lo sviluppo ed il mantenimento. #[em Aiuta tradingradar.net] tramite una donazione, anche minima.
+  p Come vedi #[em tradingradar.net non ha pubblicità e non richiede abbonamenti], ma ha comunque dei costi di servizio e richiede molto tempo per lo sviluppo ed il mantenimento. #[br]#[em Aiuta tradingradar.net] tramite una donazione, anche minima.
   div 
     form(action="https://www.paypal.com/donate", method="post" target="_top")
       input(type="hidden", name="hosted_button_id", value="MJSHSMCGKUW8L")
       input(type="image", src="https://www.paypalobjects.com/it_IT/IT/i/btn/btn_donateCC_LG.gif", border="0", name="submit", title="PayPal - The safer, easier way to pay online!", alt="Fai una donazione con il pulsante PayPal")
       img(alt="", border="0", src="https://www.paypal.com/it_IT/i/scr/pixel.gif", width="1", height="1")
+  div 
+    h3 I nostri Sostenitori
+    div(id="paypals")
+      if !paypals.length
+        div(class="nopals") Ancora nessuna donazione 
+      else 
+        each pal in paypals
+          div
+            a(href=pal.url, title=pal.name)
+              img(src="/assets/images/pals/" + pal.img + ".png")
+            p #{pal.text}
