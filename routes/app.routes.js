@@ -179,7 +179,7 @@ module.exports = app => {
   app.get('/privacy', (req, res) => {
     const breadcrumbs = [
       {
-        name: 'privacy'
+        name: 'Privacy'
       }
     ]
     res.render('privacy/privacy', { id: 'privacy', title: 'Privacy', url: req.url, breadcrumbs })
