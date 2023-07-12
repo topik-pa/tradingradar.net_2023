@@ -1,4 +1,4 @@
-import proxyFetch from '../../../scripts/proxyFetch.js'
+import proxyFetch from '../../scripts/proxyFetch.js'
 let $root
 let statuses
 const urlYield = '/api/stocks/divYield/?order=desc'

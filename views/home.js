@@ -1,4 +1,4 @@
-import proxyFetch from '../../../scripts/proxyFetch.js'
+import proxyFetch from '../scripts/proxyFetch.js'
 import perfMonth from '../components/home/perf-month/perf-month.js'
 import perfYear from '../components/home/perf-year/perf-year.js'
 import upTrends from '../components/home/uptrends/uptrends.js'
