@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunktradingradar_net=self.webpackChunktradingradar_net||[]).push([[222],{222:(a,n,r)=>{r.r(n),r.d(n,{privacy:()=>t});const t={init:async()=>{}}}}]);
