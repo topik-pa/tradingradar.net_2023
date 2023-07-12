@@ -15,7 +15,7 @@ const toggleDarkMode = () => {
 
 const header = {
   init: () => {
-    toggleDarkMode()
+    // toggleDarkMode()
   }
 }
 
