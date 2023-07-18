@@ -34,8 +34,17 @@ app.locals.basedir = path.join(__dirname, '/')
 // ROUTES
 require('./routes/api.routes')(app)
 require('./routes/app.routes')(app)
-app.get('*', function (req, res) {
-  res.render('404/404', { id: 'err404', title: 'Error 404' })
+// Handle 404
+app.use(function (req, res) {
+  res.status(400)
+  res.render('404/404', { id: 'err404', title: '404' })
+})
+// Handle 500
+// eslint-disable-next-line no-unused-vars
+app.use(function (error, req, res, next) {
+  console.log(error.stack)
+  res.status(500)
+  res.render('500/500', { id: 'err500', title: '500' })
 })
 
 app.listen(PORT, () => {

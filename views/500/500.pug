@@ -1,0 +1,12 @@
+extends ../layout.pug
+
+block append meta
+  title #{title} | #{proj_name}
+  
+block main
+  div #{title}
+  p Questa pagina ha generato un errore nel server ed il suo contenuto non è disponibile.
+  br
+  br
+  p Per favore, torna la navigazione partendo dalla Home page:
+  a(href=proj_url, title="Home page") #{proj_name}
