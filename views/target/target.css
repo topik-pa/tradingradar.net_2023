@@ -8,3 +8,7 @@
   color: var(--gray);
   text-shadow: var(--text-shadow);
 }
+
+#target-price table {
+  width: 100%;
+}

@@ -35,6 +35,7 @@ function printData (stocks, target, key) {
     $a.href = `/analisi/${encodeURI(stock.name?.toLowerCase().replace(/ /g, '-'))}?isin=${stock.isin}`
     const $span = document.createElement('span')
     $span.innerText = stock[key].value || ''
+    if (key === 'divYield') $span.innerText = $span.innerText + '%'
     $li.appendChild($a)
     $li.appendChild($span)
     $ul.appendChild($li)
