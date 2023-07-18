@@ -309,6 +309,4 @@ Sistemare colori anche nel caso dark e grafica generale
 
 Pagina Contatti
 
-Better 404 + 500
-
 Renaming variabili
