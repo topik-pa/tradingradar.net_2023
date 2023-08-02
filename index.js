@@ -33,7 +33,7 @@ app.locals.basedir = path.join(__dirname, '/')
 
 // Redirect to HTTPS
 app.use((req, res, next) => {
-  if (req.protocol === 'http') {
+  if (!req.secure) {
     return res.redirect(301, `https://${req.headers.host}${req.url}`)
   }
   next()
