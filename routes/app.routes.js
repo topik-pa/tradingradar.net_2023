@@ -35,9 +35,10 @@ function getStocksList () {
 getStocksList()
 
 function stockPageProxy (req, res, next) {
-  if (!req.query.isin) res.render('404/404', { id: 'err404', title: 'Error 404' })
-  const { name, code } = getStockNameAndCodeFromIsin(req.query.isin)
-  if (!code) res.render('404/404', { id: 'err404', title: 'Error 404' })
+  if (!req.query.isin) return res.render('home', { id: 'home', title: 'Home', url: req.url })
+  const nameAndCode = getStockNameAndCodeFromIsin(req.query.isin)
+  if (!nameAndCode) return res.render('home', { id: 'home', title: 'Home', url: req.url })
+  const { name, code } = nameAndCode
   req.name = name
   req.code = code
   next()
