@@ -25,18 +25,23 @@ https://eslint.org/docs/user-guide/getting-started
 ###################
 📍Prossimo stacco del dividendo
 
-CAIRO COMMUNICATIONS
+ENEL
 
-Div. Yield (%): 7,59
-Valore dividendo (€): 0,14
-Data dividendo: 29/05/23
+Div. Yield (%): 6,37
+Valore dividendo (€): 0,2
+Data dividendo: 24/07/23
 
-Analisi completa:
+Analisi completa ENEL:
+tradingradar.net/analisi/enel?isin=IT0003128367
 
-Tutti i segnali:
+Tutti i dividendi elencati per data e valore:
+tradingradar.net/dividendi
+
+Tieniti aggiornato anche su Telegram:
 https://t.me/tradingradarnet
 
-#cairocommunications #dividendo 
+
+#Enel #dividendo
 ###################
 🎯 Raccomandazioni e Target Price
 
@@ -52,7 +57,7 @@ Ultimo prezzo rilevato (€): 7.55
 Accedi alla lista completa:
 https://www.tradingradar.net/target-price-raccomandazioni
 
-Tutti i segnali:
+Canale Telegram:
 https://t.me/tradingradarnet
 
 #ivecogroup  #TargetPrice
@@ -61,11 +66,11 @@ https://t.me/tradingradarnet
 
 *FOTO*
 
+Canale Telegram:
+https://t.me/tradingradarnet
+
 Accedi alla lista completa:
 https://tradingradar.net/#uptrends
-
-Tutti i segnali:
-https://t.me/tradingradarnet
 
 #titolo #titolo
 ###################
@@ -81,47 +86,48 @@ https://t.me/tradingradarnet
 Banco Bpm +13,57%
 Iveco Group +12,04%
 
+Canale Telegram:
+https://t.me/tradingradarnet
+
 Accedi alla lista completa:
 tradingradar.net/#perf-year
-
-Tutti i segnali:
-https://t.me/tradingradarnet
 
 #UniCredit #saipem #BPER #BPM #iveco
 ###################
 🔴 ⬇️⬇️⬇️ Le 5 peggiori performance dell'anno
 
-1. UNICREDIT +15,97%
-2. SAIPEM +15,65%
-3. BPER BANCA +15,52%
-4. Banco Bpm +13,57%
-5. Iveco Group +12,04%
+🥇BANCA MONTE PASCHI SIENA -75,16%
+🥈AGATOS -61,93%
+🥉ALGOWATT -39,47%
+Aquafil -38,50%
+Askoll Eva 
+
+Canale Telegram:
+https://t.me/tradingradarnet
 
 Accedi alla lista completa:
-https://tradingradar.net/#perf-year
+tradingradar.net/#perf-year
 
-Tutti i segnali:
+#MPS #agatos #algowatt #Aquafil #askoll
+###################
+###################
+BANCA POPOLARE DI SONDRIO
+
+Prezzo in salita dopo aver VIOLATO LA RESISTENZA ed ora in procinto di coprire tutto il GAP A 4.1€. Interessanti spunti rialzisti oltre quest'ultimo livello.
+
+Rating Borsa Italiana [0-4]: 4
+Rating Milano Finanza [A-E]: B-
+
+Rilevazione: 18/7/2023
+
+Canale Telegram:
 https://t.me/tradingradarnet
-
-#titolo #titolo
-###################
-###################
-FRENI BREMBO
-
-Il RIALZO ....
-
-Dice Teleborsa:
-...
-
-Rilevazione: 12/7/2023
 
 Analisi completa e Rassegna Stampa:
-https://tradingradar.net/analisi/brembo?isin=IT0005252728
+tradingradar.net/analisi/bca-pop-sondrio?isin=IT0000784196
 
-Tutti i segnali:
-https://t.me/tradingradarnet
 
-#brembo #analisitecnica
+#titolo #analisitecnica
 ###################
 ###################
 ###################
@@ -129,18 +135,23 @@ https://t.me/tradingradarnet
 ###################
 📍Prossimo stacco del dividendo
 
-CAIRO COMMUNICATIONS
+ENEL
 
-Div. Yield (%): 7,59
-Valore dividendo (€): 0,14
-Data dividendo: 29/05/23
+Div. Yield (%): 6,37
+Valore dividendo (€): 0,2
+Data dividendo: 24/07/23
 
-Analisi completa:
+Analisi completa ENEL:
+tradingradar.net/analisi/enel?isin=IT0003128367
 
-Tutti i segnali:
+Tutti i dividendi elencati per data e valore:
+tradingradar.net/dividendi
+
+Tieniti aggiornato anche su Telegram:
 https://t.me/tradingradarnet
 
-#cairocommunications #dividendo 
+
+#Enel #dividendo
 ###################
 Chiusura Poll
 ###################
@@ -158,7 +169,7 @@ Ultimo prezzo rilevato (€): 7.55
 Accedi alla lista completa:
 https://www.tradingradar.net/target-price-raccomandazioni
 
-Tutti i segnali:
+Canale Telegram:
 https://t.me/tradingradarnet
 
 #ivecogroup  #TargetPrice
@@ -170,7 +181,7 @@ https://t.me/tradingradarnet
 LAccedi alla lista completa:
 https://tradingradar.net/#downtrends
 
-Tutti i segnali:
+Canale Telegram:
 https://t.me/tradingradarnet
 
 #titolo #titolo
@@ -192,7 +203,7 @@ Valore in rapporto al prezzo del titolo
 Accedi alla lista completa:
 https://www.tradingradar.net/dividendi
 
-Tutti i segnali:
+Canale Telegram:
 https://t.me/tradingradarnet
 
 #dividendo #dividendi #titolo #titolo
@@ -204,7 +215,7 @@ https://t.me/tradingradarnet
 Accedi alla lista completa:
 https://tradingradar.net/#upinversion
 
-Tutti i segnali:
+Canale Telegram:
 https://t.me/tradingradarnet
 
 #titolo #titolo
@@ -221,7 +232,7 @@ Rilevazione: 12/7/2023
 Analisi completa e Rassegna Stampa:
 https://tradingradar.net/analisi/brembo?isin=IT0005252728
 
-Tutti i segnali:
+Canale Telegram:
 https://t.me/tradingradarnet
 
 #brembo #analisitecnica
@@ -241,7 +252,7 @@ Data dividendo: 24/07/23
 Analisi completa:
 https://www.tradingradar.net/analisi/pirelli-&-c?isin=IT0005278236
 
-Tutti i segnali:
+Canale Telegram:
 https://t.me/tradingradarnet
 
 #pirelli #dividendi
@@ -257,7 +268,7 @@ Saipem +14,33%
 Lista completa:
 https://tradingradar.net/#perf-month
 
-Tutti i segnali:
+Canale Telegram:
 https://t.me/tradingradarnet
 
 #DeLonghi #UniCredit #BPER #BPM #saipem
@@ -275,7 +286,7 @@ Ariston Holding -10,57%
 Lista completa:
 https://tradingradar.net/#perf-month
 
-Tutti i segnali:
+Canale Telegram:
 https://t.me/tradingradarnet
 
 #DeLonghi #UniCredit #BPER #BPM #saipem
@@ -294,7 +305,7 @@ Leonardo
 Accedi alla lista completa:
 https://tradingradar.net/#downinversion
 
-Tutti i segnali:
+Canale Telegram:
 https://t.me/tradingradarnet
 
 #azimut #eni #FinecoBank #intesasanpaolo #Leonardo
@@ -309,4 +320,11 @@ Sistemare colori anche nel caso dark e grafica generale
 
 Pagina Contatti
 
+Migliorare pagine analisi stock
+
+Aggiungere alcuni redirect da url presenti in google
+
+Sistemare criticità rilevate da google
+
 Renaming variabili
+
