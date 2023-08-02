@@ -31,14 +31,6 @@ app.use((req, res, next) => {
 // Use absolute path in pug imports
 app.locals.basedir = path.join(__dirname, '/')
 
-// Redirect to HTTPS
-app.use((req, res, next) => {
-  if (!req.secure) {
-    return res.redirect(301, `https://${req.headers.host}${req.url}`)
-  }
-  next()
-})
-
 // ROUTES
 require('./routes/api.routes')(app)
 require('./routes/app.routes')(app)
