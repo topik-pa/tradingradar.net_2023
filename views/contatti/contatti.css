@@ -1,0 +1,10 @@
+#contatti #socials-contacts a {
+  margin-right: var(--x-large-space);
+  margin-top: var(--normal-space);
+  font-size: var(--font-size-biggest);
+  display: inline-block;
+}
+
+#contatti h2 {
+  margin-top: var(--large-space);
+}

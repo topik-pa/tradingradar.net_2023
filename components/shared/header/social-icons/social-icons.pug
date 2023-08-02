@@ -1,31 +1,3 @@
-- 
-  let socials = [
-    {
-      name: 'Facebook',
-      url: 'https://www.facebook.com/tradingradar/',
-      icon: 'icon-facebook'
-    },
-    {
-      name: 'Telegram',
-      url: 'https://t.me/tradingradarnet/',
-      icon: 'icon-telegram'
-    },
-    {
-      name: 'Twitter',
-      url: 'https://twitter.com/TradingradarN',
-      icon: 'icon-twitter'
-    },
-    {
-      name: 'LinkedIn',
-      url: 'https://www.linkedin.com/in/markopavan/',
-      icon: 'icon-linkedin2'
-    },
-    {
-      name: 'Mail',
-      url: 'mailto:info@tradingradar.net',
-      icon: 'icon-envelop'
-    }
-  ]
 div(id="socials")
   each social in socials
     a(href=social.url, title=social.name)

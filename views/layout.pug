@@ -11,6 +11,33 @@
   let sc_project = 11043457
   let sc_security = '9f87886c'
   let GATagId = 'UA-109143172-1'
+  let socials = [
+    {
+      name: 'Facebook',
+      url: 'https://www.facebook.com/tradingradar/',
+      icon: 'icon-facebook'
+    },
+    {
+      name: 'Telegram',
+      url: 'https://t.me/tradingradarnet/',
+      icon: 'icon-telegram'
+    },
+    {
+      name: 'Twitter',
+      url: 'https://twitter.com/TradingradarN',
+      icon: 'icon-twitter'
+    },
+    {
+      name: 'LinkedIn',
+      url: 'https://www.linkedin.com/in/markopavan/',
+      icon: 'icon-linkedin2'
+    },
+    {
+      name: 'Mail',
+      url: 'mailto:info@tradingradar.net',
+      icon: 'icon-envelop'
+    }
+  ]
 
 doctype html
 html
@@ -22,9 +49,6 @@ html
       meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
       meta(name="author" content=owner)
     link(rel="shortcut icon", href="/public/favicon.ico", type="image/x-icon")
-    if prod
-      script. 
-        if (window.location.protocol == 'http:') window.location.protocol = 'https:'
     script. 
       if (localStorage.getItem('dark')) document.documentElement.classList.add('dark')
     if prod

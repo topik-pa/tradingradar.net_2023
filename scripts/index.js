@@ -86,6 +86,11 @@ if (document.querySelector('body#downinversion-view')) {
     module.downInversionView.init()
   })
 }
+if (document.querySelector('body#contatti')) {
+  import('../views/contatti/contatti.js').then((module) => {
+    module.contatti.init()
+  })
+}
 if (document.querySelector('body#privacy')) {
   import('../views/privacy/privacy.js').then((module) => {
     module.privacy.init()

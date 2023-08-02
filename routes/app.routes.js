@@ -176,6 +176,15 @@ module.exports = app => {
     ]
     res.render('landing/inver-ribassista', { id: 'downinversion-view', title: 'Titoli azionari in inversione ribassista', url: req.url, breadcrumbs })
   })
+  // Contatti
+  app.get('/contatti', (req, res) => {
+    const breadcrumbs = [
+      {
+        name: 'Contatti'
+      }
+    ]
+    res.render('contatti/contatti', { id: 'contatti', title: 'Contatti', url: req.url, breadcrumbs })
+  })
   // Privacy
   app.get('/privacy', (req, res) => {
     const breadcrumbs = [
