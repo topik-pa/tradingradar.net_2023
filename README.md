@@ -74,7 +74,21 @@ https://tradingradar.net/#uptrends
 
 #titolo #titolo
 ###################
-🟢 Prossimi stacchi dividendo
+📍📍📍 I prossimi DIVIDENDI di Borsa Italiana
+
+La lista ordinata delle date di stacco del Dividendo
+
+Banca Generali:   19/02/24
+Abitare In:   02/10/23
+Bastogi:   02/10/23
+Stmicroelectronics:   18/09/23
+Eni:   01/09/23
+
+Tutti i dividendi con valore e data:
+tradingradar.net/dividendi
+
+Segui su Telegram:
+t.me/tradingradarnet
 
 ###################
 ###################
@@ -209,17 +223,15 @@ t.me/tradingradarnet
 
 #dividendo #dividendi
 ###################
-🟢 ⬆️⬆️⬆️ Titoli inversione di trend rialzista
+🟢 ⬆️⬆️⬆️ Titoli in INVERSIONE DI TREND
 
-*FOTO*
+Lista delle azioni della Borsa Italiana il cui prezzo, DOPO UNA FASE DI RIBASSO, è salito SOPRA LA MEDIA a 20gg e 40gg.
 
 Accedi alla lista completa:
-https://tradingradar.net/#upinversion
+tradingradar.net/#upinversion
 
 Canale Telegram:
-https://t.me/tradingradarnet
-
-#titolo #titolo
+t.me/tradingradarnet
 ###################
 FRENI BREMBO
 
