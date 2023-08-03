@@ -38,7 +38,6 @@ function updateUIStatus (type) {
 
 function printInfoData () {
   $root.querySelector('.last-price span').innerText = data.info.body.lastPrice.value || 'nd'
-  $root.querySelector('.volatility span').innerText = data.info.body.volatility?.value
 
   const $profile = $root.querySelector('.profile div')
   $profile.prepend(data.info.body.profile?.value)
@@ -87,6 +86,30 @@ function printInfoData () {
   $performance.querySelector('a').href = data.info.body.perf1M?.source
 }
 
+function printInfoAlerts () {
+  const lastPrice = data.info.body.lastPrice.value
+  if (!lastPrice) {
+    return
+  }
+  const $target = $root.querySelector('.average .alert')
+  if (lastPrice > data.info.body.mm100days.value) {
+    $target.innerText = `Il prezzo attuale (€ ${lastPrice}) è superiore a tutte le medie prese in esame`
+    $target.classList.add('em', 'green')
+  }
+  if (lastPrice < data.info.body.mm20days.value) {
+    $target.innerText = `Il prezzo attuale (€ ${lastPrice}) è inferiore a tutte le medie prese in esame`
+    $target.classList.add('em', 'red')
+  }
+  if (lastPrice > data.info.body.mm40days.value && lastPrice < data.info.body.mm100days.value) {
+    $target.innerText = `Il prezzo attuale (€ ${lastPrice}) è superiore alla media a 40gg`
+    $target.classList.add('green')
+  }
+  if (lastPrice < data.info.body.mm40days.value && lastPrice > data.info.body.mm20days.value) {
+    $target.innerText = `Il prezzo attuale (€ ${lastPrice}) è inferiore alla media a 40gg`
+    $target.classList.add('red')
+  }
+}
+
 function printAnalysisData () {
   const $analysis = $root.querySelector('.analysis')
   const $borsaItaliana = $analysis.querySelector('.borsa-italiana')
@@ -96,18 +119,66 @@ function printAnalysisData () {
   $borsaItaliana.querySelector('.support span').innerText = data.analysis.body.borsaIt_support?.value
   $borsaItaliana.querySelector('.rsi span').innerText = data.analysis.body.borsaIt_rsi?.value
   $borsaItaliana.querySelector('.evaluation span').innerText = data.analysis.body.borsaIt_evaluation?.value
-  $borsaItaliana.querySelector('.rating span').innerText = data.analysis.body.borsaIt_rating?.value
+  const $rating = $borsaItaliana.querySelector('.rating span')
+  $rating.innerText = data.analysis.body.borsaIt_rating?.value
+  switch (data.analysis.body.borsaIt_rating?.value) {
+  case 0:
+    $rating.classList.add('em', 'red')
+    break
+  case 1:
+    $rating.classList.add('red')
+    break
+  case 3:
+    $rating.classList.add('green')
+    break
+  case 4:
+    $rating.classList.add('em', 'green')
+    break
+  default:
+    break
+  }
 
   const $ilSole24Ore = $analysis.querySelector('.il-sole-24-ore')
   $ilSole24Ore.querySelector('a').href = data.analysis.body.sol24_shortTendency?.source
   $ilSole24Ore.querySelector('p a').href = data.analysis.body.sol24_shortTendency?.source
-  $ilSole24Ore.querySelector('.short-tend span').innerText = data.analysis.body.sol24_shortTendency?.value
-  $ilSole24Ore.querySelector('.med-tend span').innerText = data.analysis.body.sol24_mediumTendency?.value
+  const $short = $ilSole24Ore.querySelector('.short-tend span')
+  $short.innerText = data.analysis.body.sol24_shortTendency?.value
+  if (data.analysis.body.sol24_shortTendency?.value === 'Rialzo') {
+    $short.classList.add('green')
+  }
+  if (data.analysis.body.sol24_shortTendency?.value === 'Ribasso') {
+    $short.classList.add('red')
+  }
+  const $med = $ilSole24Ore.querySelector('.med-tend span')
+  $med.innerText = data.analysis.body.sol24_mediumTendency?.value
+  if (data.analysis.body.sol24_mediumTendency?.value === 'Rialzo') {
+    $med.classList.add('green')
+  }
+  if (data.analysis.body.sol24_mediumTendency?.value === 'Ribasso') {
+    $med.classList.add('red')
+  }
 
   const $mf = $analysis.querySelector('.milano-finanza')
   $mf.querySelector('a').href = data.analysis.body.milFin_mfRanking?.source
   $mf.querySelector('p a').href = data.analysis.body.milFin_mfRanking?.source
-  $mf.querySelector('.rating span').innerText = data.analysis.body.milFin_mfRanking?.value
+  const $mfRating = $mf.querySelector('.rating span')
+  $mfRating.innerText = data.analysis.body.milFin_mfRanking?.value
+  switch (data.analysis.body.milFin_mfRanking?.value) {
+  case 'A':
+    $mfRating.classList.add('em', 'green')
+    break
+  case 'B':
+    $mfRating.classList.add('green')
+    break
+  case 'D':
+    $mfRating.classList.add('red')
+    break
+  case 'E':
+    $mfRating.classList.add('em', 'red')
+    break
+  default:
+    break
+  }
   $mf.querySelector('.risk span').innerText = data.analysis.body.milFin_mfRisk?.value
 
   const $sol = $analysis.querySelector('.soldi-on-line')
@@ -116,6 +187,7 @@ function printAnalysisData () {
   $sol.querySelector('.date span').innerText = data.analysis.body.sol_lastJudgment?.value[0]
   $sol.querySelector('.bank span').innerText = data.analysis.body.sol_lastJudgment?.value[1]
   $sol.querySelector('.evaluation span').innerText = data.analysis.body.sol_lastJudgment?.value[2]
+  $sol.querySelector('.evaluation span').classList.add(data.analysis.body.sol_lastJudgment?.value[2].toLowerCase())
   $sol.querySelector('.target span').innerText = data.analysis.body.sol_lastJudgment?.value[3]
 
   const $teleborsa = $analysis.querySelector('.teleborsa')
@@ -124,6 +196,33 @@ function printAnalysisData () {
   $teleborsa.querySelector('.resistance span').innerText = data.analysis.body.teleb_tbResistance?.value
   $teleborsa.querySelector('.support span').innerText = data.analysis.body.teleb_tbSupport?.value
   $teleborsa.querySelector('.trend span').innerText = data.analysis.body.teleb_trend?.value
+}
+
+function printAnalysisAlerts () {
+  const lastPrice = data.info.body.lastPrice.value
+  if (!lastPrice) {
+    return
+  }
+  const $target1 = $root.querySelector('.borsa-italiana .alert')
+  const $target2 = $root.querySelector('.teleborsa .alert')
+
+  if (lastPrice > data.analysis.body.borsaIt_resistance.value) {
+    $target1.innerText = `Il prezzo attuale (€ ${lastPrice}) è superiore alla Resistenza indicata da Borsa Italiana`
+    $target1.classList.add('em', 'green')
+  }
+  if (lastPrice < data.analysis.body.borsaIt_support.value) {
+    $target1.innerText = `Il prezzo attuale (€ ${lastPrice}) è inferiore al Supporto indicato da Borsa Italiana`
+    $target1.classList.add('em', 'red')
+  }
+
+  if (lastPrice > data.analysis.body.teleb_tbResistance.value) {
+    $target2.innerText = `Il prezzo attuale (€ ${lastPrice}) è superiore alla Resistenza indicata da Teleborsa`
+    $target2.classList.add('em', 'green')
+  }
+  if (lastPrice < data.analysis.body.teleb_tbSupport.value) {
+    $target2.innerText = `Il prezzo attuale (€ ${lastPrice}) è inferiore al Supporto indicato da Teleborsa`
+    $target2.classList.add('em', 'red')
+  }
 }
 
 function printNewsData () {
@@ -150,10 +249,12 @@ const stockInfo = {
       await callTheApi('info')
       if (data.info.status === 'success') {
         printInfoData()
+        printInfoAlerts()
       }
       await callTheApi('analysis')
       if (data.analysis.status === 'success') {
         printAnalysisData()
+        printAnalysisAlerts()
       }
       await callTheApi('news')
       if (data.news.status === 'success') {

@@ -7,11 +7,10 @@ div(id="stock_info")
     h2 Informazioni #{stock.name}
     p Valore e data del #[em dividendo]; le #[em medie mobili] a 20, 40 e 100 giorni; i #[em massimi e minimi] (assoluti e relativi all'ultimo anno) e le #[em performance] fatte registrare dal titolo #{stock.name}.
     div 
-      div(class="last-price") Ultimo prezzo rilevato (€): 
-        span
-      div(class="volatility") Volatilità: 
-        span
       div(class="first")
+        div(class="last-price")
+          h3 Ultimo prezzo rilevato (€): 
+            span 
         div(class="profile")
           h3 Profilo 
           div 
@@ -41,6 +40,7 @@ div(id="stock_info")
               span
             div(class="mm100") Media mobile 100 gg (€): 
               span
+            p(class="alert")
         div(class="minmax")
           h3 Minimi e massimi
             a(class="ext", href="#", target="_blank", rel="noopener noreferrer") [Fonte]
@@ -81,6 +81,7 @@ div(id="stock_info")
             span
           li(class="rating") Rating [0-4]: 
             span
+          p(class="alert")
         p Analisi completa su #[a(class="ext", href="#", title="Vai alla pagina originale" target="_blank", rel="noopener noreferrer") Borsa Italiana]
       div(class="il-sole-24-ore img_icon")
         h3 
@@ -123,6 +124,7 @@ div(id="stock_info")
             span
           li(class="trend") Trend: 
             span
+          p(class="alert")
         p Analisi completa su #[a(class="ext", href="#", title="Vai alla pagina originale" target="_blank", rel="noopener noreferrer") Teleborsa]         
   include ../../shared/support/support.pug
   div(class="news loading")

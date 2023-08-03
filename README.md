@@ -74,6 +74,9 @@ https://tradingradar.net/#uptrends
 
 #titolo #titolo
 ###################
+🟢 Prossimi stacchi dividendo
+
+###################
 ###################
 ###################
 # Martedì
@@ -190,23 +193,21 @@ https://t.me/tradingradarnet
 ###################
 # Giovedì
 ###################
-📍 I 5 dividendi più ricchi di Piazza Affari
+📍 I 5 DIVIDENDI più ricchi di Piazza Affari (in rapporto al prezzo attuale)
 
-Valore in rapporto al prezzo del titolo
+1. 🥇 AUTOSTRADE MERIDIONALI   28,81%
+2. 🥈 BANCA IFIS   9,19%
+3. 🥉 RCS MEDIAGROUP   8,44%
+4.    Cairo Communication   8,27%
+5.    Stellantis   7,99%
 
-1. AUTOSTRADE MERID 30,17%
-2. BANCA IFIS 9,59%
-3. RCS MEDIAGROUP 8,55%
-4. Cairo Communication 8,46%
-5. Stellantis 8,24%
+Lista completa dei dividendi:
+www.tradingradar.net/dividendi
 
-Accedi alla lista completa:
-https://www.tradingradar.net/dividendi
+Tieniti aggiornato su Telegram:
+t.me/tradingradarnet
 
-Canale Telegram:
-https://t.me/tradingradarnet
-
-#dividendo #dividendi #titolo #titolo
+#dividendo #dividendi
 ###################
 🟢 ⬆️⬆️⬆️ Titoli inversione di trend rialzista
 
@@ -312,15 +313,17 @@ https://t.me/tradingradarnet
 ###################
 ###################
 ###################
+# All'occorrenza
+###################
+Analisi del titolo migliore del mese
+###################
+###################
+###################
 
 # TODO
 OG tags image
 
 Sistemare colori anche nel caso dark e grafica generale
-
-Pagina Contatti
-
-Migliorare pagine analisi stock
 
 Aggiungere alcuni redirect da url presenti in google
 

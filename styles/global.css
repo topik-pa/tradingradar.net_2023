@@ -67,3 +67,9 @@ small {
 .blue {
   color: var(--blue);
 }
+.buy {
+  color: var(--green);
+}
+.sell {
+  color: var(--red);
+}
