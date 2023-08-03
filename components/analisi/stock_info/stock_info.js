@@ -92,21 +92,48 @@ function printInfoAlerts () {
     return
   }
   const $target = $root.querySelector('.average .alert')
-  if (lastPrice > data.info.body.mm100days.value) {
+  if (lastPrice > data.info.body.mm20days.value && lastPrice > data.info.body.mm40days.value && lastPrice > data.info.body.mm100days.value) {
     $target.innerText = `Il prezzo attuale (€ ${lastPrice}) è superiore a tutte le medie prese in esame`
     $target.classList.add('em', 'green')
+    return
   }
-  if (lastPrice < data.info.body.mm20days.value) {
+  if (lastPrice < data.info.body.mm20days.value && lastPrice < data.info.body.mm40days.value && lastPrice < data.info.body.mm100days.value) {
     $target.innerText = `Il prezzo attuale (€ ${lastPrice}) è inferiore a tutte le medie prese in esame`
     $target.classList.add('em', 'red')
+    return
   }
-  if (lastPrice > data.info.body.mm40days.value && lastPrice < data.info.body.mm100days.value) {
-    $target.innerText = `Il prezzo attuale (€ ${lastPrice}) è superiore alla media a 40gg`
+
+  if (lastPrice < data.info.body.mm20days.value) {
+    $target.innerText = `Il prezzo attuale (€ ${lastPrice}) è inferiore alla media a 20gg`
+    $target.classList.remove('green')
+    $target.classList.add('red')
+  }
+  if (lastPrice > data.info.body.mm20days.value) {
+    $target.innerText = `Il prezzo attuale (€ ${lastPrice}) è superiore alla media a 20gg`
+    $target.classList.remove('red')
     $target.classList.add('green')
   }
-  if (lastPrice < data.info.body.mm40days.value && lastPrice > data.info.body.mm20days.value) {
+
+  if (lastPrice < data.info.body.mm40days.value) {
     $target.innerText = `Il prezzo attuale (€ ${lastPrice}) è inferiore alla media a 40gg`
+    $target.classList.remove('green')
     $target.classList.add('red')
+  }
+  if (lastPrice > data.info.body.mm40days.value) {
+    $target.innerText = `Il prezzo attuale (€ ${lastPrice}) è superiore alla media a 40gg`
+    $target.classList.remove('red')
+    $target.classList.add('green')
+  }
+
+  if (lastPrice < data.info.body.mm100days.value) {
+    $target.innerText = `Il prezzo attuale (€ ${lastPrice}) è inferiore alla media a 100gg`
+    $target.classList.remove('green')
+    $target.classList.add('red')
+  }
+  if (lastPrice > data.info.body.mm100days.value) {
+    $target.innerText = `Il prezzo attuale (€ ${lastPrice}) è superiore alla media a 100gg`
+    $target.classList.remove('red')
+    $target.classList.add('green')
   }
 }
 
@@ -163,7 +190,7 @@ function printAnalysisData () {
   $mf.querySelector('p a').href = data.analysis.body.milFin_mfRanking?.source
   const $mfRating = $mf.querySelector('.rating span')
   $mfRating.innerText = data.analysis.body.milFin_mfRanking?.value
-  switch (data.analysis.body.milFin_mfRanking?.value) {
+  switch (data.analysis.body.milFin_mfRanking?.value[0]) {
   case 'A':
     $mfRating.classList.add('em', 'green')
     break
@@ -187,8 +214,21 @@ function printAnalysisData () {
   $sol.querySelector('.date span').innerText = data.analysis.body.sol_lastJudgment?.value[0]
   $sol.querySelector('.bank span').innerText = data.analysis.body.sol_lastJudgment?.value[1]
   $sol.querySelector('.evaluation span').innerText = data.analysis.body.sol_lastJudgment?.value[2]
-  $sol.querySelector('.evaluation span').classList.add(data.analysis.body.sol_lastJudgment?.value[2].toLowerCase())
+  $sol.querySelector('.evaluation span').classList.add(data.analysis.body.sol_lastJudgment?.value[2]?.replace('▲', '').replace('▼', '').trim().toLowerCase())
   $sol.querySelector('.target span').innerText = data.analysis.body.sol_lastJudgment?.value[3]
+
+  const lastPrice = data.info.body.lastPrice.value
+  const targetPrice = Number(data.analysis.body.sol_lastJudgment?.value[3]?.replace('▲', '').replace('▼', '').trim())
+  if (lastPrice && targetPrice > 0) {
+    const delta = ((targetPrice - lastPrice) / (lastPrice / 100)).toFixed(0)
+    if (delta > 0) {
+      $sol.querySelector('.alert').innerText = `Il prezzo attuale (€ ${lastPrice}) è inferiore del ${delta}% rispetto al prezzo target indicato`
+      $sol.querySelector('.alert').classList.add('green')
+    } else {
+      $sol.querySelector('.alert').innerText = `Il prezzo attuale (€ ${lastPrice}) è superiore del ${delta}% rispetto al prezzo target indicato`
+      $sol.querySelector('.alert').classList.add('red')
+    }
+  }
 
   const $teleborsa = $analysis.querySelector('.teleborsa')
   $teleborsa.querySelector('a').href = data.analysis.body.teleb_tbResistance?.source
