@@ -20,3 +20,6 @@ section(id="support")
             a(href=pal.url, title=pal.name)
               img(src="/assets/images/pals/" + pal.img + ".png")
             p #{pal.text}
+  div(id="sharers")
+    h3 Oppure... Supportaci condividendo questo contenuto
+    div(class="fb-like" data-href=(proj_url + url) data-width="" data-layout="button_count" data-action="like" data-size="large" data-share="true")
