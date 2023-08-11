@@ -1,0 +1,13 @@
+#follow h2 {
+  color: #990000;
+}
+
+#follow ul {
+  list-style: initial;
+  margin-left: 2rem;
+}
+
+#follow input[type=text], #follow input[type=email], #follow input[type=submit]  {
+  display: block;
+  margin: .5rem 0;
+}
