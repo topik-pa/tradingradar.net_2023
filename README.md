@@ -254,21 +254,21 @@ https://t.me/tradingradarnet
 ###################
 # Venerdì
 ###################
-📍Prossimo stacco del dividendo
+📍Prossimo STACCO del DIVIDENDO
 
-PIRELLI & C
+ENI
 
-Div. Yield (%): 4,62
-Valore dividendo (€): 0,218
-Data dividendo: 24/07/23
+Div. Yield (%): 6,99
+Valore dividendo (€): 0,24
+Data dividendo: 18/09/23
 
-Analisi completa:
-https://www.tradingradar.net/analisi/pirelli-&-c?isin=IT0005278236
+Tutte le info:
+tradingradar.net/analisi/eni?isin=IT0003132476
 
-Canale Telegram:
-https://t.me/tradingradarnet
+Rimani aggiornato su Telegram:
+t.me/tradingradarnet
 
-#pirelli #dividendi
+#eni #dividendi
 ###################
 🟢🟢🟢 Le 5 migliori performance degli ultimi 30 giorni
 
