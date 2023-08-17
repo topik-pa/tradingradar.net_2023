@@ -22,3 +22,8 @@
 #paypals p {
   width: 15rem;
 }
+
+#sharers h3 {
+  border-top: 1px solid var(--lighter-gray);
+  padding: var(--normal-space) 0;
+}

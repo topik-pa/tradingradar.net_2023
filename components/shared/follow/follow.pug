@@ -9,10 +9,11 @@ section(id="follow")
     li I valori di Resistenza e Supporto aggiornati ogni giorno 
     li Ed ogni altro aspetto riguardante il titolo che stai monitorando...
   h3 Inserisci la tua email e ricevi subito il primo aggiornamento 
-  form(action="mailto:marco@tradingradar.net?subject=Aggiornami su " + stock.name, method="POST", enctype="text/plain") 
+  form(action="https://tradingradar-v3.herokuapp.com/api/custom/follow", method="POST", enctype="text/plain") 
     input(type="text", name="name", placeholder="Nome", required)
     input(type="email", name="email", placeholder="Email", required)
     input(type="checkbox", name="privacy", id="privacy", required)
+    input(type="hidden", name="title", value=stock.name)
     label(for="privacy") Cliccando il pulsante qui sotto, accetti le condizioni di #[a(href="/privacy", title="Vai alla pagina Privacy" target="_blank", rel="noopener noreferrer") Privacy]
     input(type="submit", class="btn", value="Inviami il primo aggiornamento")
 
