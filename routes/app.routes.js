@@ -4,11 +4,11 @@ let stocks = []
 function getStocksList () {
   const options = {
     method: 'GET',
-    hostname: 'tradingradar.p.rapidapi.com',
+    hostname: 'tradingradar-v3.herokuapp.com',
     port: null,
     path: '/api/stocks',
     headers: {
-      'x-rapidapi-host': 'tradingradar.p.rapidapi.com',
+      'x-rapidapi-host': 'tradingradar-v3.herokuapp.com',
       'x-rapidapi-key': process.env.X_RAPIDAPI_KEY,
       useQueryString: true
     }
