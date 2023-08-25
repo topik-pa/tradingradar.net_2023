@@ -1,20 +1,43 @@
 -
   let fbPost0 = process.env.FB_POST_0
   let telPost0 = process.env.TEL_POST_0
+  let fbPost1 = process.env.FB_POST_1
+  let telPost1 = process.env.TEL_POST_1
+  let fbPost2 = process.env.FB_POST_2
+  let telPost2 = process.env.TEL_POST_2
+
 
 section(id="almodovar")
   div
     h2 Segui #[em i Titoli più interessanti in questo momento] in base alla loro Analisi Tecnica
     p Ogni giorno pubblichiamo analisi, aggiornamenti, sondaggi e notizie tramite le #[em nostre Pagine o Canali]
-    div(class="fb")
 
-      div(class="fb-post", data-href='https://www.facebook.com/tradingradar/posts/' + fbPost0, data-width="350", data-show-text="true")
-        blockquote(cite='https://www.facebook.com/tradingradar/posts/' + fbPost0, class="fb-xfbml-parse-ignore")
+    if fbPost0
+      div(class="fb")
+        div(class="fb-post", data-href='https://www.facebook.com/tradingradar/posts/' + fbPost0, data-width="350", data-show-text="true")
+          blockquote(cite='https://www.facebook.com/tradingradar/posts/' + fbPost0, class="fb-xfbml-parse-ignore")
+        div 
+          h3 Partecipa al #[em Sondaggio su Telegram] per dire la tua circa la nostra Analisi
+          div
+            script(async, src="https://telegram.org/js/telegram-widget.js?22", data-telegram-post=telPost0, data-width="100%", data-userpic="false")
 
-      div 
-        h3 Partecipa al #[em Sondaggio su Telegram] per dire la tua circa la nostra Analisi
-        div
-          script(async, src="https://telegram.org/js/telegram-widget.js?22", data-telegram-post=telPost0, data-width="100%", data-userpic="false")
+    if fbPost1
+      div(class="fb")
+        div(class="fb-post", data-href='https://www.facebook.com/tradingradar/posts/' + fbPost1, data-width="350", data-show-text="true")
+          blockquote(cite='https://www.facebook.com/tradingradar/posts/' + fbPost1, class="fb-xfbml-parse-ignore")
+        div 
+          h3 Partecipa al #[em Sondaggio su Telegram] per dire la tua circa la nostra Analisi
+          div
+            script(async, src="https://telegram.org/js/telegram-widget.js?22", data-telegram-post=telPost1, data-width="100%", data-userpic="false")
+    
+    if fbPost2
+      div(class="fb")
+        div(class="fb-post", data-href='https://www.facebook.com/tradingradar/posts/' + fbPost2, data-width="350", data-show-text="true")
+          blockquote(cite='https://www.facebook.com/tradingradar/posts/' + fbPost2, class="fb-xfbml-parse-ignore")
+        div 
+          h3 Partecipa al #[em Sondaggio su Telegram] per dire la tua circa la nostra Analisi
+          div
+            script(async, src="https://telegram.org/js/telegram-widget.js?22", data-telegram-post=telPost2, data-width="100%", data-userpic="false")
 
 
   
