@@ -5,6 +5,7 @@
 @import "/components/home/upinversion/upinversion.css";
 @import "/components/home/downinversion/downinversion.css";
 @import "/components/home/socials/socials.css";
+@import "/components/home/main-banner/main-banner.css";
 
 #home h3 {
   margin-top: var(--large-space);

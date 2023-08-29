@@ -12,4 +12,5 @@
   width: var(--x-large-space);
   height: var(--x-large-space);
   margin-right: var(--small-space);
+  border: 1px solid var(--gray);
 }
