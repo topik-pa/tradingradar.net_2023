@@ -9,4 +9,5 @@
 
 #home h3 {
   margin-top: var(--large-space);
+  font-weight: 500;
 }

@@ -1,17 +1,23 @@
-#criteria p {
-  display: flex;
-  align-items: center;
-  margin: var(--large-space) 0;
+#criteria div p {
+  width: 50%;
 }
  #criteria em {
-  margin-right: var(--small-space);
+  margin-top: var(--small-space);
+  display: block;
 }
  #criteria a {
-  margin-right: var(--x-large-space);
   text-shadow: var(--text-shadow);
   display: flex;
   align-items: center;
   cursor: pointer;
+  margin-top: var(--normal-space);
+  font-weight: bold;
+  margin-left: var(--small-space);
+}
+#criteria div {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
  #criteria a[data-target]::before {
   font-family: 'icomoon' !important;

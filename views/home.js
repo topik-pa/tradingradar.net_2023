@@ -32,8 +32,8 @@ function updateUI (status) {
 
 export const home = {
   init: async () => {
-    /*perfMonth.init()
+    perfMonth.init()
     perfYear.init()
-    callCustomApi()*/
+    callCustomApi()
   }
 }

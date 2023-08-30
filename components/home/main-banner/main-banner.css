@@ -1,36 +1,39 @@
-#main-banner {
-  margin: 0;
-  padding: 0;
+#main-banner > div {
+  background-image: url('/assets/images/borsa-milano.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: var(--xx-small-space);
+}
+
+#main-banner > div > div {
   position: relative;
+}
+
+#main-banner > div > div {
+  position: relative;
+  padding: var(--normal-space);
+  background: rgba(255,255,255,.95);
+  border-bottom: 1px solid var(--gray);
+}
+#main-banner img {
+  display: none;
+}
+
+#main-banner #slogan {
+  
+}
+#main-banner #sources {
+  margin: var(--normal-space);
+}
+#main-banner #criteria {
+  margin: var(--normal-space);
 }
 
 #main-banner h1, #main-banner h3 {
   font-weight: bold;
 }
 
-#main-banner img {
-  width: 100%;
-  opacity: .8;
-}
-
-#main-banner > div > div {
-  position: absolute;
-}
-
-#main-banner #slogan {
-  top: 0;
-  right: 0;
-  left: 0;
-  padding: 1rem 0;
-  background: rgba(255,255,255,.9);
-}
-
-#main-banner #sources {
-  bottom: 0;
-  right: 0;
-  left: 0;
-  padding: 1rem 0;
-  background: rgba(255,255,255,.75);
-  font-weight: 500;
-  border-top: 1px solid var(--gray);
+@media screen and (max-width: 768px) {
+  
 }
