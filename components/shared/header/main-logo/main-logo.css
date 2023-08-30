@@ -1,13 +1,15 @@
 #main-logo {
   font-size: var(--font-size-biggest);
   font-family: 'Space Grotesk', sans-serif;
-  font-weight: 500;
+  font-weight: bold;
 }
 
 #main-logo img {
   height: 4rem;
   vertical-align: text-bottom;
   border-radius: 50%;
+
+  margin-right: var(--x-small-space);
 }
 
 #main-logo span {
@@ -16,6 +18,5 @@
 
 #main-logo small {
   display: block;
-  font-weight: 500;
   font-style: italic;
 }

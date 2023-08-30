@@ -1,4 +1,4 @@
-#main-banner > div {
+#main-banner {
   background-image: url('/assets/images/borsa-milano.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -6,11 +6,11 @@
   padding-bottom: var(--xx-small-space);
 }
 
-#main-banner > div > div {
+#main-banner > div {
   position: relative;
 }
 
-#main-banner > div > div {
+#main-banner > div {
   position: relative;
   padding: var(--normal-space);
   background: rgba(255,255,255,.95);
