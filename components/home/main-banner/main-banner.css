@@ -16,24 +16,39 @@
   background: rgba(255,255,255,.95);
   border-bottom: 1px solid var(--gray);
 }
-#main-banner img {
-  display: none;
-}
 
-#main-banner #slogan {
-  
-}
-#main-banner #sources {
+#main-banner .wrap {
   margin: var(--normal-space);
 }
 #main-banner #criteria {
   margin: var(--normal-space);
+}
+#main-banner #poll div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 #main-banner h1, #main-banner h3 {
   font-weight: bold;
 }
 
+#main-banner .siema img {
+  height: 10rem;
+  border: 1px solid var(--gray);
+  padding: var(--xx-small-space);
+}
+
+#main-banner .prev,  #main-banner .next {
+  font-size: var(--font-size-huge);
+  padding: var(--xx-small-space) var(--large-space);
+  margin: 0;
+}
+
+
 @media screen and (max-width: 768px) {
-  
+  #main-banner #poll div {
+    flex-direction: column;
+  }  
 }

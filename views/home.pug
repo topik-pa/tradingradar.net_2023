@@ -13,6 +13,9 @@ block append meta
   meta(name="og:description" content=description)
   meta(name="og:image" content="/assets/images/borsa-milano-2.jpg")
 
+block intro 
+  include ../components/home/main-banner/main-banner.pug
+
 block main
   include ../components/home/perf-month/perf-month.pug
   include ../components/home/perf-year/perf-year.pug
@@ -25,3 +28,6 @@ block main
 
 block prepend footer
   include ../components/shared/disclaimer/disclaimer.pug
+
+block viewscripts
+  script(src='/scripts/vendors/siema.min.js')
