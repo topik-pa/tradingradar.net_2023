@@ -57,14 +57,15 @@ html
       link(rel="stylesheet", type="text/css", href="/styles/style.css")
   body(id=id)
     include ../components/shared/header/header.pug
-    if id==='home'
-      include ../components/home/main-banner/main-banner.pug
+    block intro
     main
       block main
+    block outro
     block footer
       include ../components/shared/footer/footer.pug
       include ../components/shared/cookie_layer/cookie_layer.pug
       include ../components/shared/goto_top/goto_top.pug
+    block viewscripts
     if prod
       script(src='/dist/main.js')
     else
