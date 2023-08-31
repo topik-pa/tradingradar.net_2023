@@ -58,6 +58,16 @@ small {
   display: block!important;
 }
 
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.clear {
+  clear: both;
+}
+
 .green {
   color: var(--green);
 }
