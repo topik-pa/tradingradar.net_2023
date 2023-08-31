@@ -8,7 +8,6 @@ mainMenu.toggleMobileMenu()
 cookieLayer.init()
 gotoTop.init()
 header.init()
-banner.init()
 
 // Go to the url hash element if present
 function goToHash () {
@@ -41,6 +40,7 @@ goToSection()
 if (document.querySelector('body#home')) {
   import('../views/home.js').then((module) => {
     module.home.init()
+    banner.init()
   })
 }
 if (document.querySelector('body#titoli')) {
