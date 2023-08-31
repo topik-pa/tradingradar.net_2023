@@ -1,6 +1,5 @@
 const banner = {
   init: () => {
-    console.log('banner...')
     // eslint-disable-next-line no-new, no-undef
     const mySiema = new Siema({
       duration: 200,
