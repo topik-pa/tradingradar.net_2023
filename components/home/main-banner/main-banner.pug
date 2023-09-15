@@ -10,22 +10,7 @@ div(id="main-banner")
     h1 Trova ora le Azioni più interessanti della Borsa Italiana
     p Scopri #[em in tempo reale] quali titoli azionari stanno generando segnali cruciali secondo i principi dell'#[a(class="ext", href="http://www.traderpedia.it/wiki/index.php/Categoria:Analisi_tecnica")  Analisi Tecnica].
   
-  div(class="wrap")
-    div(class="siema")
-
-      div(id="poll")
-        h3 Il Sondaggio 
-        p #{titlePoll0}
-        div
-          a(data-target="almodovar", href="/#almodovar")
-            img(src='/assets/images/analyses/' + stockPoll0 + '-min.png', alt=titlePoll0)
-          a(class="btn secondary", href='https://www.facebook.com/tradingradar/posts/' + fbPoll0) Leggi l'Analisi
-          a(class="btn", href=telPollLink0) Vota su Telegram
-        
-      include ../../shared/sources/sources.pug
-
-    span(class="btn secondary prev") &#8249;
-    span(class="btn secondary fr next") &#8250;
-    span(class="clear")
+  div(class="wrap")   
+    include ../../shared/sources/sources.pug
     
   include ../../shared/criteria/criteria.pug

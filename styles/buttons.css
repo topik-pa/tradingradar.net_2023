@@ -9,6 +9,7 @@
   color: var(--secondary);
   cursor: pointer;
   border: 1px solid var(--darker-gray);
+  text-align: center;
 }
 .btn:hover {
   filter: brightness(90%);
